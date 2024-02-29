@@ -1,0 +1,30 @@
+
+table {
+    align-items: center;
+    margin-right: 150px;
+    border-color: #0eab38;
+    border-radius: 5px;
+    margin-bottom:50px;
+    background-color: white;
+    border-style: double;
+    margin-left: 25%;
+}
+td {
+    border-radius: 2%;
+    border-color:#59ce78;
+}
+
+tr{
+    color:#0eab38;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Futura Md BT', sans-serif;
+    color:#0eab38;
+    margin-right: 50px;
+}
+

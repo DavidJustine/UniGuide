@@ -1,0 +1,170 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the body height to fill the viewport vertically */
+  background-color: #f1f1f1; /* Set a background color for the entire body */
+}
+.wrapper{
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-right: 420px;
+  position: absolute;
+  top: 50%; /* Adjust the vertical position as needed */
+  left: 50%; /* Adjust the horizontal position as needed */
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust the width as needed */
+  max-width: 420px; /* Adjust the maximum width as needed */
+  overflow: hidden;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 10px;
+    padding: 12px 5px;
+  }
+  
+  .title h1 {
+    margin: 0;
+  }
+  
+  .title .difficulty-button {
+    margin-left: 10px;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #e3e3e3;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  .title .difficulty-button:hover {
+    background-color: #ddd;
+  }
+  
+  
+.cards, .card, .view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards{
+  height: 400px;
+  width: 375px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card{
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  height: calc(100% / 4 - 10px);
+  width: calc(100% / 4 - 10px);
+}
+.card.shake{
+  animation: shake 0.35s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-13px);
+  }
+  40%{
+    transform: translateX(13px);
+  }
+  60%{
+    transform: translateX(-8px);
+  }
+  80%{
+    transform: translateX(8px);
+  }
+}
+.card .view{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 7px;
+  background: #46E068;
+  pointer-events: none;
+  backface-visibility: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.25s linear;
+}
+.card .front-view img{
+  width: 55px;
+}
+.card .back-view img{
+  max-width: 70px;
+}
+.card .back-view{
+  transform: rotateY(-180deg);
+  background: #ffffff;
+}
+.card.flip .back-view{
+  transform: rotateY(0);
+}
+.card.flip .front-view{
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 700px) {
+  .cards{
+    height: 350px;
+    width: 350px;
+  }
+  .card .front-view img{
+    width: 40px;
+  }
+  .card .back-view img{
+    max-width: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cards{
+    height: 300px;
+    width: 300px;
+  }
+  .card .front-view img{
+    width: 15px;
+  }
+  .card .back-view img{
+    max-width: 35px;
+  }
+}
+
+.exit{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.exit img{
+  width: 50px;
+  height: 50px;
+
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+.game-bod{
+  flex-direction: column;
+
+  
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0;
+}
+
+
+.title_game{
+    text-align: center;
+    color:#2c6346;
+}
+
+  
+.container-wrapper {
+    margin-top: 5;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 2%;
+    max-width: 1500px;
+  }
+  .container {
+    position: relative;
+    margin: 20px 20px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  .container:nth-child(3n+1) {
+    margin-left: 30px;
+  }
+  
+  .container img {
+    width: 80%;
+    height: 200px;
+    margin-left: 30px;
+   
+    filter: #03fc3d;
+  }
+  
+  .container h3 {
+    margin: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size:30px;
+ 
+  }
+  
+  .container h3:hover {
+    transform: scale(1.10);
+    
+  }
+  
+  .container-link {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .container-link h3 {
+    margin: 20px;
+    color: #FFFFFF;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: -100%; /* Slide-in from top position */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease; /* Added top transition */
+    color: #ffffff;
+  }
+  
+  .overlay h3 {
+    margin: 20px 0; /* Adjust the margin to create spacing between h3 and p */
+    font-size: 30px;
+    font-weight: bold; /* You can adjust the font weight as needed */
+  }
+  
+  .overlay p{
+    display: block;
+    margin-left: 5px;
+    text-align: justify;
+    width:250px;
+  }
+  .container-link:hover .overlay {
+    opacity: 1;
+    top: 0; /* Slide-in to top position */
+    background-color:#fcb900;
+  }

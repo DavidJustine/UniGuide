@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fillin2.css">
+    <title>UNIGUIDE|Fill in the Blank: DMMMSU Hymn</title>
+</head>
+<body>
+
+<div class="exit">
+  <a href="fillin.html"><img src="../icons/exit-exit.png" alt=""></a>
+</div>
+
+<div class="container">
+
+  <h1>Fill in the Blank: DMMMSU Hymn</h1>
+  <form id="almamater-form">
+    <h2>Don Mariano Marcos Memorial State University Hymn</h2>
+    <p><input type="text" id="blank1" placeholder="Enter your answer"> beloved Alma Mater</p>
+    <p>Don Mariano Marcos Memorial State University</p>
+    <p>Your <input type="text" id="blank2" placeholder="Enter your answer"> name will shine forever</p>
+    <p>Keep your glorious fame resounding far and near.</p>
+    
+    <p>From thy portals we learn</p>
+    <p>Skills unknown before</p>
+    <p>And <input type="text" id="blank3" placeholder="Enter your answer"> and <input type="text" id="blank4" placeholder="Enter your answer"> keep on craving for more</p>
+    
+    <p>Oh hail beloved <input type="text" id="blank5" placeholder="Enter your answer"></p>
+    <p>Never shall we stand forlorn</p>
+    <p>From you a new era is born</p>
+    <p>To keep <input type="text" id="blank6" placeholder="Enter your answer"> smoothly moving on.</p>
+    
+    <p>You are our <input type="text" id="blank7" placeholder="Enter your answer"></p>
+    <p>In our quest for <input type="text" id="blank8" placeholder="Enter your answer"> and <input type="text" id="blank9" placeholder="Enter your answer"></p>
+    <p>You fulfill a noble mission</p>
+    <p>In <input type="text" id="blank10" placeholder="Enter your answer">, <input type="text" id="blank11" placeholder="Enter your answer"> and <input type="text" id="blank12" placeholder="Enter your answer"></p>
+    
+    <p>You give the best solution</p>
+    <p>In <input type="text" id="blank13" placeholder="Enter your answer"> our land into a <input type="text" id="blank14" placeholder="Enter your answer"></p>
+    <p>And though the years may come and go</p>
+    <p>Our <input type="text" id="blank15" placeholder="Enter your answer"> for you will grow</p>
+    <p><input type="text" id="blank16" placeholder="Enter your answer"> University</p>
+    <p>We are proud of you.</p>
+
+    <div class="button-container">
+      <button type="button" onclick="checkAlmaMaterAnswers()">Submit</button>
+      <button type="button" onclick="goBack()">Back</button>
+      <button id="view-answers-btn" style="display: none;" onclick="onViewAnswersClick()">View Answers</button>
+    </div>
+  </form>
+
+
+  <div id="result"></div>
+
+  <div id="answer-container" style="display: none; text-align: center;">
+    <h3>Correct Answers:</h3>
+    <ul id="answer-list"></ul>
+  </div>
+
+  <script src="js/fillin_hymn.js"></script>
+</body>
+</html>

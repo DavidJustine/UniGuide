@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+@import url('https://fonts.cdnfonts.com/css/league-spartan');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+
+
+
+.close-nav button {
+    all: unset;
+    background: transparent;
+    font-size: 42px;
+    cursor: pointer;
+    border: 1px transparent;
+    padding: 15px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.close-nav button:hover {
+    color: #222222;
+    background: white;
+}
+
+.menu-bar button {
+    border: 1px transparent;
+    background: #46E068;
+    height: 50px;
+    width: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.menu-bar i {
+    display: block;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+.menu-bar i::after {
+    display: block;
+    content: "";
+    border-top: 3px solid #ffffff;
+    margin: 6px 0;
+}
+.menu-bar button:hover {
+    background: white;
+}
+.menu-bar button:hover i {
+    border-color: transparent;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+@media (min-width: 550px) {
+  .navbar {
+      all: unset;
+      display: block;
+  }
+  .navbar ul {
+      flex-direction: row;
+      gap: 40px;
+      font-size: 17px;
+  }
+  .navbar ul a {
+      font-size: inherit;
+  }
+  .close-nav,
+  .menu-bar {
+      display: none;
+  }
+  
+}
+/*----------------------------------------------------------------------------------------------------*/
+.college-programs-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Display content in a column layout */
+   /* Center items horizontally */
+  width:40%;
+  margin-left: 4%;
+}
+
+.college-programs-title h1 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 10px;
+  font-size: 50px;
+  text-align: left;
+  width:40%;
+}
+
+.college-programs-title img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+section {
+  
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  overflow: hidden;
+  height: auto;
+}
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  margin-top: 3%;
+  width: 340px;
+  height: 440px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  filter: blur(2px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  margin-bottom: 40px;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #1b7402;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.swiper-slide--one span {
+  background: #2c6346;
+}
+
+.swiper-slide--two span {
+  background: #2c6346;
+}
+
+.swiper-slide--three span {
+  background: #2c6346;
+}
+
+.swiper-slide--four span {
+  background: #2c6346;
+}
+
+.swiper-slide--five span {
+  background: #2c6346;
+}
+
+.swiper-slide--six span {
+  background: #2c6346;
+}
+
+.swiper-slide--seven span {
+  background: #2c6346;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  font-size:3.3rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  padding: 25px 45px 0 25px;
+}
+
+.swiper-slide p {
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;                                            
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+
+.swiper-slide svg {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+}
+
+
+
+
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.read {
+  background-color: #fcb900;
+  border: #46E068;
+  align-items: center;
+  width: 340px;
+  height: 40px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: #fff 0.3s ease;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+
+.read h3{
+  color: #fff;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  text-decoration: none;
+}
+
+.readmore a {
+  color: #fff;
+  text-decoration: none; /* Remove underline */
+}
+
+.readmore a:hover {
+  color: #1b7402; /* Change color on hover */
+}
+
+courses-.container{
+  padding: 0;
+}
+
+.space{
+  margin-top: 10%;
+}

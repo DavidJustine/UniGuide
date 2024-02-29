@@ -1,0 +1,858 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background: #f6f6f6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-masthead {
+  background-color: #fcb900;
+  position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 6;
+    height: 226px;
+
+}
+
+.container-masthead .logo a {
+  display: flex; 
+  align-items: center; /* Align items vertically */
+  text-decoration: none; /* Remove default underline from the link */
+  color: inherit; /* Inherit the color from the parent */
+
+}
+
+.row{
+  display: flex;
+  margin-left: 8%;
+}
+
+.large-9  columns{
+  width: 180px;
+}
+.container-masthead .logo img {
+  margin-left: 15px; /* Add some space between the logos and the text */
+  width: 150px;
+}
+
+
+#textlogo-inner-wrapper {
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-direction: column; /* Arrange items vertically */
+  margin-top: 28px;
+  margin-left: 15px;
+  font-family: "Cinzel";
+  font-weight: bold;
+  color:#2c6346;
+  text-transform: uppercase;
+
+}
+
+
+#agency-heading, #agency-name, #agency-tagline {
+  font-size: 16px; /* Set the font size to your desired value */
+  margin-bottom: 2px; /* Add some space between the text elements */
+}
+#agency-heading{
+  font-size: 13px;
+}
+
+#agency-name{
+  font-size: 22px;
+}
+
+#agency-tagline{
+  font-size: 13px;
+}
+
+#agency-line {
+  height: 1.5px; /* Set the height of the line */
+  background-color: #2c6346; /* Set the color of the line */
+  width: 640px; /* Set the width of the line */
+  margin-bottom: 5px; /* Add some space between the line and the text */
+}
+
+.navbar{
+  background-color: #2c6346;
+  padding: 7px 0;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.navbar ul{
+  margin-left:8%;
+  display: flex;
+  gap:47px;
+  
+}
+
+.navbar ul a {
+  all: unset;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  
+}
+.navbar ul a:hover {
+  color: #dbffe4;
+}
+
+.navbar li{
+  list-style-type: none;
+}
+
+.space{
+  margin-top: 20px;
+}
+
+.home-banner{
+  margin: auto;
+}
+
+.home-banner img{
+  width: 1519px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.footer img{
+  width:100px;
+  margin-right: 6%;
+}
+
+#wuri{
+  width:200px;
+}
+
+#qs-star{
+  width:150px;
+}
+
+/*------------------------------------------------------------side_nav_bar----------------------------------*/
+
+/* New styles for the side navbar */
+.sidenavbar {
+  position: fixed;
+  top: 17%;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background-color: #2c6346;
+  z-index: -6;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Add the overflow-y property to make the sidebar scrollable */
+}
+
+/* Customizing the scrollbar */
+.sidenavbar::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+    border-radius: 4px; /* Add border radius to the scrollbar */
+}
+
+.sidenavbar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+    border-radius: 4px; /* Add border radius to the scrollbar track */
+}
+
+.sidenavbar::-webkit-scrollbar-thumb {
+  background-color: #358b5d; /* Set the color of the scrollbar thumb */
+    border-radius: 4px; /* Add border radius to the scrollbar thumb */
+}
+
+.sidenavbar::-webkit-scrollbar-thumb:hover {
+  background-color: #358b5d; /* Set the color of the scrollbar thumb when hovered */
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 11.3px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.sidebar-item-img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 1;
+    margin-right: 130px;
+}
+
+.sidebar-item:hover {
+    background-color: #0eab38; /* Change the background color on hover */
+}
+
+.sidebar-item:hover .sidebar-item-img {
+    opacity: 100;
+}
+
+.sidebar-item-text {
+    color: white;
+    font-family: 'Futura Md BT', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 13px;
+    margin-left: 120px;
+}
+
+/* 
+.sidebar-item:hover .sidebar-item-text {
+    display: block;
+} */
+
+.label{
+    float: left;
+    display:flex;
+    color: white;
+    padding-left: 24px;
+    padding-right: 390px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Futura Md BT', sans-serif;
+}
+
+.space {
+    margin-bottom: 50px;
+    margin-top: 55px;
+}
+
+.default-text {
+
+    justify-content: center;
+    align-items: center;
+    color: #2c6346;
+    font-size: 40px;
+    font-family: 'Futura Md BT', sans-serif;
+    margin-left: 42%;
+    margin-top: 15.5%;
+    height: 170px;
+    width:56%;
+}
+
+.default-text img{
+    width:400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tut{
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4%;
+  margin-top: 20px;
+  width:500px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.timeline h2 {
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 15%;
+  }
+
+  .timeline #h2-regis {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0eab38;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 25%;
+  }
+
+  .timeline #h2-cross, 
+  .timeline #h2-shift,
+  .timeline #h2-atten,
+  .timeline #h2-leave,
+  .timeline #h2-reten,
+  .timeline #h2-sub {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 20%;
+  }
+
+  .timeline #h2-aclo {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 23%;
+  }
+
+  .timeline #h2-val {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 27%;
+  }
+
+  .timeline #h2-with,
+  .timeline #h2-withuni {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 11%;
+  }
+
+  .timeline #h2-classreg {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 120px;
+    margin-left: 7%;
+  }
+
+  .timeline #h2-grad {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 5%;
+  }
+
+  .timeline #h2-pre, 
+  .timeline #h2-sub {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 13%;
+  } 
+
+  .timeline #h2-exam {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 17%;
+  } 
+
+  .timeline #h2-under {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 18%;
+  }
+
+
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-right: 90px;
+    margin-top: 150px;
+    margin-bottom:10px;
+    margin-left: 28%;
+  }
+  
+  .timeline button {
+    display: block;
+    background-color: #0eab38;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 500px;
+    margin-bottom: 20px;
+    width:100px;
+  }
+
+  .timeline #button-regis {
+    position: fixed;
+    display: block;
+    background-color: #0eab38;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5%;
+    width:100px;
+  }
+  
+  .back-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2c6346;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 17px;;
+  }
+  
+  .back-link i {
+    margin-right: 5px;
+    color: #2c6346;
+  }
+  
+  article {
+    padding: 4px;
+    font-family: 'Futura Md BT', sans-serif;
+    color: #2c6346;
+  }
+  
+  article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px; /* Decrease the bottom margin */
+    margin-left:20px;
+    color: #2c6346;
+  }
+  article h4{
+    font-size: 1.3rem;
+    color: #2c6346;
+  }
+  
+  
+  article h5{
+  font-size: 1.2rem;
+  color: #2c6346;
+  }
+  article p {
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-top: 5px; /* Decrease the top margin */
+    text-align:justify;
+    margin-left:35px;
+    color: #2c6346;
+  }
+  
+  
+  
+  .timeline button:hover {
+    background-color: #1bd64d;
+    cursor: pointer;
+  }
+  
+  
+  .timeline__event {
+    background: #f9fff0;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  
+  .timeline__event__title {
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #2fa01b;
+    letter-spacing: 1.5px;
+  }
+  
+  .timeline__event__content {
+    padding: 10px;
+  }
+  
+  .timeline__event__date {
+    font-family: 'Futura Md BT', sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 0 0 8px;
+    background: #2fa01b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    font-size: 2rem;
+    color: #2fa01b;
+    padding: 20px;
+  }
+  
+  .timeline__event__icon i {
+    position: absolute;
+    top: 50%;
+    left: -76px;
+    font-size: 2.5rem;
+    transform: translateY(-50%);
+  }
+  
+  .timeline__event__description {
+    font-family: 'Futura Md BT', sans-serif;
+    flex-basis: 60%;
+    font-weight: 400;
+    font-size: large;
+    color: black;
+  }
+  
+  .timeline__event:after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #4cdd33;
+    position: absolute;
+    top: 52%;
+    left: -3.5rem;
+    z-index: -1;
+  }
+  
+  .timeline__event:before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 100%;
+    left: -6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #4cdd33;
+  }
+  
+  .timeline__event--type2:before {
+    background: #ffffff;
+    border-color: #f6f35c;
+  }
+  
+  .timeline__event--type2:after {
+    background: #f6f35c;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #6f6d00;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    background: #f6f35c;
+    color: #b1ae00;
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #b1ae00;
+  }
+  
+  
+  .timeline__event:last-child:after {
+    content: none;
+  }
+  
+  @media (max-width: 786px) {
+    .timeline__event {
+      flex-direction: column;
+    }
+    
+    .timeline__event__icon {
+      border-radius: 4px 4px 0 0;
+    }
+  }
+  
+
+
+/*----------------------------------------------------acad-sched-conduct-table----------------------------------*/
+table {
+    align-items: center;
+    margin-right: 150px;
+    border-color: #0eab38;
+    border-radius: 5px;
+    margin-bottom:50px;
+    background-color: white;
+    border-style: double;
+    margin-left: 25%;
+}
+
+td,
+th {
+  padding: 5px 26px;
+  text-align: justify;
+}
+
+thead tr {
+  background-color: #0eab38;
+  color: #ffffff;
+
+}
+
+thead th {
+  width: 35%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fffef0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fffcd7;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Futura Md BT', sans-serif;
+    color:#0eab38;
+    margin-right: 50px;
+}
+
+/*-------------------------------------------acad-sched-cunduct-cards-----------------------------------------------s*/
+.cards {
+    width: 100%;
+    max-width: 900px;
+    margin-left: 28%;
+    display: grid;
+    grid-template-rows: repeat(var(--cards-count), var(--card-height));
+    gap: 230px 0;
+    margin-top: 150px;
+  }
+  
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  
+  .card__content {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+  }
+
+  #card-con {
+    margin: 0;
+  }
+  
+  .card__title {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: #2c6346;
+  }
+  
+  .card__description {
+    line-height: 1.4;
+    font-size: 15px;
+    color: #2c6346;
+    text-align: justify;
+    width: 470px;
+    margin: 0;
+  }
+  
+  /*--------------------------------------admission-section------------------------------------*/
+
+  .admissionsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 25%;
+    max-width: 1500px;
+}
+
+.sec {
+    position: relative;
+    margin: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 245px;
+    height: 240px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.sec:hover {
+    transform: scale(1.05);
+}
+
+.sec:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.sec img {
+    width: 50%;
+    height: auto;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.sec h3 {
+    margin: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size:23px;
+    font-family: 'Futura Md BT', sans-serif;
+    text-align: center;
+}
+
+.sec-link {
+    text-decoration: none;
+    position: relative;
+}
+
+.sec-link h3 {
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.overlay {
+    position: absolute;
+    top: -100%; /* Slide-in from top position */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease; /* Added top transition */
+    color: #ffffff;
+}
+
+.sec-link:hover .overlay {
+    opacity: 1;
+    top: 0; /* Slide-in to top position */
+    background-color:#2c6346;
+}
+
+
+@media (min-width: 550px) {
+    .navbar {
+        all: unset;
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: row;
+        gap: 40px;
+        font-size: 17px;
+    }
+    .navbar ul a {
+        font-size: inherit;
+    }
+    .close-nav,
+    .menu-bar {
+        display: none;
+    }
+    
+}
+
+h2 {
+  color: #0eab38;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: justify;
+  margin-left: 25%;
+  color: #0eab38;
+  margin-right: 150px;
+}

@@ -1,0 +1,17 @@
+
+.options .option .background-image {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.options .option .background-image img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.options .option .background-image:hover img {
+    transform: scale(1.1); /* Adjust the scaling factor for the zoom effect */
+}
+

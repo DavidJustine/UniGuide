@@ -1,0 +1,49 @@
+
+/*------------------------------------------academic-timelimit------------------------------------------*/
+table {
+    width: 1000px;
+    margin-top: 50px;
+    font-size: 14px;
+    border-collapse: collapse;
+    margin-left: 25%;
+    margin-bottom: 30px;
+  }
+  
+  td,
+  th {
+    padding: 16px 24px;
+    text-align: justify;
+  }
+  
+  thead tr {
+    background-color: #0eab38;
+    color: #ffffff;
+ 
+  }
+  
+  thead th {
+    width: 35%;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #fffef0;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fffcd7;
+  }
+
+  h2 {
+    color: #0eab38;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+    margin-left: 25%;
+    color: #0eab38;
+}

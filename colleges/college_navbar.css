@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    background: #f6f6f6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .container-masthead {
+    background-color: #fcb900;
+    position: fixed;
+      top: 0;
+      margin: 0;
+      width: 100%;
+      z-index: 6;
+      height: 226px;
+  
+  }
+  
+  .container-masthead .logo a {
+    display: flex; 
+    align-items: center; /* Align items vertically */
+    text-decoration: none; /* Remove default underline from the link */
+    color: inherit; /* Inherit the color from the parent */
+  
+  }
+  
+  .row{
+    display: flex;
+    margin-left: 8%;
+  }
+  
+  .large-9  columns{
+    width: 180px;
+  }
+  .container-masthead .logo img {
+    margin-left: 15px; /* Add some space between the logos and the text */
+    width: 150px;
+  }
+  
+  
+  #textlogo-inner-wrapper {
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: column; /* Arrange items vertically */
+    margin-top: 28px;
+    margin-left: 15px;
+    font-family: "Cinzel";
+    font-weight: bold;
+    color:#2c6346;
+    text-transform: uppercase;
+  
+  }
+  
+  
+  #agency-heading, #agency-name, #agency-tagline {
+    font-size: 16px; /* Set the font size to your desired value */
+    margin-bottom: 2px; /* Add some space between the text elements */
+  }
+  #agency-heading{
+    font-size: 13px;
+  }
+  
+  #agency-name{
+    font-size: 22px;
+  }
+  
+  #agency-tagline{
+    font-size: 13px;
+  }
+  
+  #agency-line {
+    height: 1.5px; /* Set the height of the line */
+    background-color: #2c6346; /* Set the color of the line */
+    width: 640px; /* Set the width of the line */
+    margin-bottom: 5px; /* Add some space between the line and the text */
+  }
+  
+  .navbar{
+    background-color: #2c6346;
+    padding: 7px 0;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  
+  .navbar ul{
+    margin-left:8%;
+    display: flex;
+    gap:47px;
+    
+  }
+  
+  .navbar ul a {
+    all: unset;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    
+  }
+  .navbar ul a:hover {
+    color: #dbffe4;
+  }
+  
+  .navbar li{
+    list-style-type: none;
+  }
+  
+  .space{
+    margin-top: 20px;
+  }
+  
+  .home-banner{
+    margin: auto;
+  }
+  
+  .home-banner img{
+    width: 1519px;
+  }
+  
+  .footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .footer img{
+    width:100px;
+    margin-right: 6%;
+  }
+  
+  #wuri{
+    width:200px;
+  }
+  
+  #qs-star{
+    width:150px;
+  }
+  
+@media (min-width: 550px) {
+    .navbar {
+        all: unset;
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: row;
+        gap: 40px;
+        font-size: 17px;
+    }
+    .navbar ul a {
+        font-size: inherit;
+    }
+    .close-nav,
+    .menu-bar {
+        display: none;
+    }
+    
+}

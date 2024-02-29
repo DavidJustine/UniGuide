@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fillin2.css">
+    <title>UNIGUIDE|Fill-in-the Blank: DMMMSU-PMVGO</title>
+</head>
+<body>
+
+<div class="exit">
+    <a href="fillin.html"><img src="../icons/exit-exit.png" alt=""></a>
+</div>
+
+<div class="container-pmvgo">
+
+  <h1>Fill in the Blank</h1>
+    <form id="university-form">
+        <h2>Philosophy</h2>
+          <p>Total <input type="text" id="philosophy-blank1" placeholder="Enter your answer"> with <input type="text" id="philosophy-blank2" placeholder="Enter your answer">.</p>
+        
+        <h2>Vision</h2>
+          <p>A <input type="text" id="vision-blank1" placeholder="Enter your answer"> <input type="text" id="vision-blank2" placeholder="Enter your answer"> university.</p>
+        
+        <h2>Mission</h2>
+          <p>Provides high quality <input type="text" id="mission-blank1" placeholder="Enter your answer">, <input type="text" id="mission-blank2" placeholder="Enter your answer">, and <input type="text" id="mission-blank3" placeholder="Enter your answer">.</p>
+        
+        <h2>Goal</h2>
+          <p>To lead in <input type="text" id="goal-blank1" placeholder="Enter your answer"> human <input type="text" id="goal-blank2" placeholder="Enter your answer"> into <input type="text" id="goal-blank3" placeholder="Enter your answer">, <input type="text" id="goal-blank4" placeholder="Enter your answer"> citizens and responsible <input type="text" id="goal-blank5" placeholder="Enter your answer">.</p>
+      
+      <div class="button-container">
+        <button type="button" onclick="checkUniversityAnswers()">Submit</button>
+        <button type="button" onclick="goBack()">Back</button>
+        <button id="view-answers-btn" style="display: none;" onclick="onViewAnswersClick()">View Answers</button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+
+    <div id="answer-container" style="display: none; text-align: center;">
+      <h3>Correct Answers:</h3>
+        <ul id="answer-list" class="answer-list"></ul>
+    </div>
+
+    <script src="js/fillin_pmvgo.js"></script>
+  </div>
+</body>
+</html>

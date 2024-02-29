@@ -1,0 +1,95 @@
+
+.navbar {
+    background-color: #46E068;
+    padding: 5px 5px;
+    text-align: center;
+    display: flex;
+    line-height: 2.3;
+    border-bottom: 3px solid #bcf3c8;
+    z-index: 6; /* set a higher z-index than the banner */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+
+    .navbar a {
+        float: left;
+        display:flex;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Futura Md BT', sans-serif;
+
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+        font-family: 'Futura Md BT', sans-serif; 
+
+        line-height: 2.3; /* increase spacing above label */
+        box-sizing: border-box;    
+    }
+
+    .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        font-family: 'Futura Md BT', sans-serif;
+        line-height: 2.3; /* increase spacing above label */
+        box-sizing: border-box;    
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        color: #acffbe;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: #46E068;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .navlogo {
+        position: relative;
+        width: 100px; /* set the width of the logo container */
+        height: 70px; /* set the height of the logo container */
+        margin-right: 30px;
+        margin-left: 250px;
+    }
+
+    .navlogo img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 78%;
+        height: auto;
+    }

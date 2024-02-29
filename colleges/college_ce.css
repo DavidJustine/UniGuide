@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  flex-direction: column;
+  background-color: #b8c6db;
+  
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+a {
+  margin-top: 40px;
+}
+
+
+.title_org {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0%; /* Adjust margin as needed */
+}
+
+#left {
+  margin-top: 45px;
+  margin-right: 10px; /* Adjust margin as needed */
+  font-size: 35px; /* Adjust size as needed */
+  color:#46E068;
+}
+
+#right {
+  margin-top: 45px;
+  margin-left: 10px; /* Adjust margin as needed */
+  font-size: 35px; /* Adjust size as needed */
+  color:#46E068;
+}
+
+ h1{
+  text-align: center;
+  margin-top: 24%;
+  color:#46E068;
+  font-size: 30px;
+}
+
+
+h2{
+  color:#46E068;
+  font-size: 20px;
+
+}
+
+.programs-container {
+  /* Your styles for the programs container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#coll {
+  height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+  margin-top: 0%; /* Adjust margin as needed */
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjust the gap between boxes */
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 10px;
+  }
+  
+  .program-box {
+    border: 1px solid #f5f5f5;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+
+.program-box img {
+  /* Your existing styles for the placeholder image */
+  width: 100%; /* Ensure the image fills the container */
+  height: auto;
+  margin: 0; /* Remove default margin */
+  
+}
+.program-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 255, 55, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1; /* Ensure the gradient is above the image */
+}
+
+.program-box h3 {
+  /* Your styles for the program titles */
+  margin-bottom: 5px; /* Adjust margin as needed */
+  font-size: 25px;
+  color:#46E068;
+}
+
+.program-box p {
+  text-align: justify;
+  color: #005c14;
+}
