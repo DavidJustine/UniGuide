@@ -10,6 +10,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .container-masthead {
     background-color: #fcb900;
 }
@@ -109,7 +111,7 @@ body {
 }
 
 .home-banner img{
-    width: 1499px;
+    width: 1539px;
 }
 
 .footer {

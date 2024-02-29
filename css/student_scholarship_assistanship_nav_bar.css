@@ -33,6 +33,7 @@ body {
     margin: 0;
     width: 100%;
     z-index: 6;
+    height: 226px;
 }
 
 .container-masthead .logo a {
@@ -180,7 +181,7 @@ body {
   /* New styles for the side navbar */
   .sidenavbar {
     position: fixed;
-    top: 15.6%;
+    top: 21.5%;
     left: 0;
     height: 100%;
     width: 280px;
@@ -960,4 +961,9 @@ background-color: #fffef0;
 
 tbody tr:nth-child(even) {
 background-color: #fffcd7;
+}
+
+
+#exit{
+  margin-left:55%;
 }

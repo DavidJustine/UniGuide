@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (isset($_GET['logout'])) {
+  // Unset all session variables
+  $_SESSION = [];
+
+  // Destroy the session
+  session_destroy();
+
+  // Redirect to the login page after logout
+  header("Location: user_register.php");
+  exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +25,8 @@
     <link href="https://fonts.cdnfonts.com/css/adam-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansserifflf" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/student_scholarship_assistanship_nav_bar.css">
+    <link rel="stylesheet" href="css/student_affair_services_con_plan_nav_bar.css">
+    <link rel="stylesheet" href="css/uniguide-home.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -16,7 +34,8 @@
 </head>
 <body>
 
- <header class="container-masthead">
+
+  <header class="container-masthead">
     <div class="row"><div class="large-9  columns">
             <h1 class="logo">
                 <a href="https://www.dmmmsu.edu.ph/" title="Don Mariano Marcos Memorial State University" rel="home">
@@ -41,47 +60,46 @@
                 <li><a href="courses.php">Colleges</a></li>
                 <li><a href="games/gameoptions.php">Games</a></li>
                 <li><a href="contact_us.php">Contact Us</a></li>
+            <li id=exit><a href="?logout=true">Log Out</a></li>
             </ul>
         </nav>
     </header>
 
+
 	<div class="sidenavbar">
 	<div class="space"> </div>
     <div class="sidebar-item">
-        <a href="ssafap-goal-objective.php">
-            <img class="sidebar-item-img" src="icons/goals.png" alt="Image 1">
-            <div class="sidebar-item-text">Goals and Objectives</div>
+        <a href="sascp-ratio.php">
+            <img class="sidebar-item-img" src="icons/rationale.png" alt="Image 1">
+            <div class="sidebar-item-text">Rationale</div>
         </a>
     </div>
     <div class="sidebar-item">
-        <a href="ssafap-personnel.php">
-            <img class="sidebar-item-img" src="icons/group.png" alt="Image 2">
-            <div class="sidebar-item-text">Personnel</div>
+        <a href="sascp-obj.php">
+            <img class="sidebar-item-img" src="icons/statement.png" alt="Image 2">
+            <div class="sidebar-item-text">Statement of Objectives</div>
         </a>
     </div>
     <div class="sidebar-item">
-        <a href="ssafap-services.php">
-            <img class="sidebar-item-img" src="icons/services.png" alt="Image 2">
-            <div class="sidebar-item-text">Services</div>
+        <a href="sascp-perso.php">
+            <img class="sidebar-item-img" src="icons/personnel.png" alt="Image 2">
+            <div class="sidebar-item-text">Personnel Involved</div>
         </a>
     </div>
 	<div class="sidebar-item">
-        <a href="ssafap-grants-scholarship.php">
-            <img class="sidebar-item-img" src="icons/scholar.png" alt="Image 2">
-            <div class="sidebar-item-text">Grants and Scholarships</div>
-        </a>
-    </div>
-	<div class="sidebar-item">
-        <a href="ssafap-student-assistanship.php">
-            <img class="sidebar-item-img" src="icons/assist.png" alt="Image 2">
-            <div class="sidebar-item-text">Student Assistantship Program</div>
+        <a href="sascp-servi.php">
+            <img class="sidebar-item-img" src="icons/continuity.png" alt="Image 2">
+            <div class="sidebar-item-text">Continuity Plan for Student Services</div>
         </a>
     </div>
 </div>
 
 <div class="timeline">
-    <h2>SERVICES<br><br></h2>
+    <h2>STATEMENT OF OBJECTIVES<br><br></h2>
 </div>
+
+<p>In consideration of SAS personnel and students, the Student Affairs and Services Continuity Plan for School Year 2021-2022 aims to:</p>
+<br><br>
 
 <!-- START SLIDE -->
 <div class="blog-slider">
@@ -91,54 +109,38 @@
        
         <div class="blog-slider__content">
     
-          <div class="blog-slider__text">
-          <h2 class="h2_services">INFORMATION</h2>
-            <p class="p_services">&#x2022; Orientation of various scholarships and educational grants offered to students</p>
-                <p class="p_services">&#x2022; Conduct of enrichment activities</p>
-          </div>
+          <div class="blog-slider__text">1. Promote continuous access to quality, relevant, efficient and effective student development services;</div>
         </div>
       </div>
       <!-- Second Slide for the Second Slider -->
       <div class="blog-slider__item swiper-slide">
-       
+        
         <div class="blog-slider__content">
     
           <div class="blog-slider__text">
-          <h2 class="h2_services">SCREENING, SELECTION AND PROCESSING</h2>
-                <p class="p_services">&#x2022; Interview [possible scholars for recommendation to prospective benefactors.</p>
-                <p class="p_services">&#x2022; Evaluates documents submitted by scholars.</p>
-                <p class="p_services">&#x2022; Consolidates requirements of scholars and submit to benefactors when necessary.</p>
-          </div>
+          2. Ensure the welfare and holistic development of SAS personnel and students;</div>
         </div>
-    </div>
+      </div>
 
         <!-- Third Slide for the Second Slider -->
-        <div class="blog-slider__item swiper-slide">
-       
-            <div class="blog-slider__content">
+      <div class="blog-slider__item swiper-slide">
         
-              <div class="blog-slider__text">
-                <h2 class="h2_services">SCHOLARSHIP CONSULTATION AND REFERAL</h2>
-                    <p>&#x2022; Schedule consultaion time for scholars with problems and other concerns.</p>
-                    <p>&#x2022; Coordinates with Program Chairpersons and Guidance  Counselors benefactors and tother concerned campus or university official for referral of scholars.</p>
-              </div>
-            </div>
+        <div class="blog-slider__content">
+    
+          <div class="blog-slider__text">3. Adapt digitalization of processes and digitization of resources of the Office of the Student Affairs and Services;</div>
         </div>
+      </div>
 
-        <!-- Fourth Slide for the Second Slider -->
-        <div class="blog-slider__item swiper-slide">
-       
-            <div class="blog-slider__content">
-        
-              <div class="blog-slider__text">
-              <h2 class="h2_services">MONITORING</h2>
-                <p class="p_services">&#x2022; Conduct meetngs of scholars for monitoring and follow-up</p>
-              </div>
-            </div>
+      <!-- Fourth Slide for the Second Slider -->
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__content">
+    
+          <div class="blog-slider__text">4. Monitor and assess the effectiveness of adapted strategies of the Office of the Student Affairs and Services.</div>
         </div>
-
+      </div>
+      </div>
     <div class="blog-slider__pagination"></div>
-</div>
+  </div>
 <!-- END SLIDE -->
 
 

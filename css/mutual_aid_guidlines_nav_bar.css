@@ -159,7 +159,7 @@ body {
 /* New styles for the side navbar */
 .sidenavbar {
   position: fixed;
-  top: 17%;
+  top: 21.5%;
   left: 0;
   height: 100%;
   width: 240px;
@@ -672,4 +672,9 @@ h4 {
   font-size: 18px;
   margin-left: 25%;
   color: #2c6346;
+}
+
+
+#exit{
+  margin-left:55%;
 }

@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (isset($_GET['logout'])) {
+  // Unset all session variables
+  $_SESSION = [];
+
+  // Destroy the session
+  session_destroy();
+
+  // Redirect to the login page after logout
+  header("Location: user_register.php");
+  exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/mutual_aid_guidlines_nav_bar.css">
+    <link rel="stylesheet" href="css/uniguide-home.css">
 </head>
 <body>
 
@@ -29,6 +47,7 @@
                     <div id="agency-line"></div>
                     <div id="agency-name">Don Mariano Marcos Memorial State University</div>
                     <div id="agency-tagline">La Union, Philippines | dmmmsu@dmmmsu.edu.ph</div>
+            <li id=exit><a href="?logout=true">Log Out</a></li>
             </div>
         </div>
         <nav class="navbar">

@@ -24,6 +24,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .container-masthead {
   background-color: #fcb900;
   position: fixed;
@@ -161,7 +163,7 @@ body {
 /* New styles for the side navbar */
 .sidenavbar {
   position: fixed;
-  top: 17%;
+  top: 21.5%;
   left: 0;
   height: 100%;
   width: 240px;
@@ -291,7 +293,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #2c6346;
-    margin-top: 80px;
+    margin-top: 120px;
     margin-bottom: 30px;
     text-align: center;
     margin-right: 300px;
@@ -303,12 +305,12 @@ body {
     font-family: 'Futura Md BT', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    color: #0eab38;
-    margin-top: 80px;
+    color: #2c6346;
+    margin-top: 100px;
     margin-bottom: 30px;
     text-align: center;
     margin-right: 300px;
-    margin-left: 25%;
+    margin-left: 24%;
   }
 
   .timeline #h2-cross, 
@@ -322,12 +324,13 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #2c6346;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 30px;
     text-align: center;
     margin-right: 300px;
-    margin-left: 20%;
+    margin-left: 18.5%;
   }
+  
 
   .timeline #h2-aclo {
     position: fixed;
@@ -335,11 +338,11 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #2c6346;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 30px;
     text-align: center;
     margin-right: 300px;
-    margin-left: 23%;
+    margin-left: 21%;
   }
 
   .timeline #h2-val {
@@ -355,19 +358,32 @@ body {
     margin-left: 27%;
   }
 
-  .timeline #h2-with,
+  .timeline #h2-with {
+    position: fixed;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c6346;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 11%;
+  }
+
   .timeline #h2-withuni {
     position: fixed;
     font-family: 'Futura Md BT', sans-serif;
     font-size: 2rem;
     font-weight: bold;
     color: #2c6346;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 30px;
     text-align: center;
     margin-right: 200px;
-    margin-left: 11%;
+    margin-left: 9%;
   }
+
 
   .timeline #h2-classreg {
     position: fixed;
@@ -375,11 +391,11 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #2c6346;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 30px;
     text-align: center;
     margin-right: 120px;
-    margin-left: 7%;
+    margin-left: 5%;
   }
 
   .timeline #h2-grad {
@@ -402,11 +418,11 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #2c6346;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 30px;
     text-align: center;
     margin-right: 300px;
-    margin-left: 13%;
+    margin-left: 14%;
   } 
 
   .timeline #h2-exam {
@@ -464,14 +480,14 @@ body {
   .timeline #button-regis {
     position: fixed;
     display: block;
-    background-color: #0eab38;
+    background-color: #2c6346;
     color: #fff;
     font-size: 15px;
     font-weight: bold;
     padding: 15px 15px;
     border: none;
     border-radius: 10px;
-    margin-top: 5%;
+    margin-top: 7%;
     width:100px;
   }
   
@@ -750,6 +766,7 @@ h1 {
     justify-content: flex-start;
     margin-left: 25%;
     max-width: 1500px;
+    margin-top: -60px;
 }
 
 .sec {
@@ -855,4 +872,9 @@ p {
   margin-left: 25%;
   color: #0eab38;
   margin-right: 150px;
+}
+
+
+#exit{
+  margin-left:55%;
 }

@@ -29,6 +29,7 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="css/uniguide-home.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
 </head>
 <body>
@@ -62,7 +63,6 @@ if (isset($_GET['logout'])) {
             </ul>
         </nav>
     </header>
-
 
 	<div class="sidenavbar">
 	<div class="space"> </div>
@@ -99,11 +99,11 @@ if (isset($_GET['logout'])) {
 </div>
 
 <div class="timeline">
-    <h2>GOALS AND OBJECTIVES<br><br></h2>
+    <h2>SERVICES<br><br></h2>
 </div>
 
 <!-- START SLIDE -->
-<div class="blog-slider" id="blog-goal">
+<div class="blog-slider">
     <div class="blog-slider__wrp swiper-wrapper">
       <!-- First Slide for the Second Slider -->
       <div class="blog-slider__item swiper-slide">
@@ -111,7 +111,9 @@ if (isset($_GET['logout'])) {
         <div class="blog-slider__content">
     
           <div class="blog-slider__text">
-                <p id="p-grant">1. To assist students who are poor but deserving to find the means of financial support through scholarships and grants for educational purposes;</p>
+          <h2 class="h2_services">INFORMATION</h2>
+            <p class="p_services">&#x2022; Orientation of various scholarships and educational grants offered to students</p>
+                <p class="p_services">&#x2022; Conduct of enrichment activities</p>
           </div>
         </div>
       </div>
@@ -121,7 +123,10 @@ if (isset($_GET['logout'])) {
         <div class="blog-slider__content">
     
           <div class="blog-slider__text">
-                <p id="p-grant">2. To provide assistance to students who intended to apply for financial loan; and</p>
+          <h2 class="h2_services">SCREENING, SELECTION AND PROCESSING</h2>
+                <p class="p_services">&#x2022; Interview [possible scholars for recommendation to prospective benefactors.</p>
+                <p class="p_services">&#x2022; Evaluates documents submitted by scholars.</p>
+                <p class="p_services">&#x2022; Consolidates requirements of scholars and submit to benefactors when necessary.</p>
           </div>
         </div>
     </div>
@@ -132,19 +137,32 @@ if (isset($_GET['logout'])) {
             <div class="blog-slider__content">
         
               <div class="blog-slider__text">
-                    <p id="p-grant">3. To scout for possible private grantors to deserving students</p>
+                <h2 class="h2_services">SCHOLARSHIP CONSULTATION AND REFERAL</h2>
+                    <p>&#x2022; Schedule consultaion time for scholars with problems and other concerns.</p>
+                    <p>&#x2022; Coordinates with Program Chairpersons and Guidance  Counselors benefactors and tother concerned campus or university official for referral of scholars.</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Fourth Slide for the Second Slider -->
+        <div class="blog-slider__item swiper-slide">
+       
+            <div class="blog-slider__content">
+        
+              <div class="blog-slider__text">
+              <h2 class="h2_services">MONITORING</h2>
+                <p class="p_services">&#x2022; Conduct meetngs of scholars for monitoring and follow-up</p>
               </div>
             </div>
         </div>
 
     <div class="blog-slider__pagination"></div>
 </div>
-        </div>
 <!-- END SLIDE -->
 
 
 <br><br><br><br><br><br>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/standards.js"></script>
 
 </body>

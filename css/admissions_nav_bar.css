@@ -181,7 +181,7 @@ body {
 /* New styles for the side navbar */
 .sidenavbar {
     position: fixed;
-    top: 17%;
+    top: 21.5%;
     left: 0;
     height: 96%;
     width: 230px;
@@ -623,3 +623,7 @@ html {
     }
   }
   
+  
+#exit{
+  margin-left:55%;
+}

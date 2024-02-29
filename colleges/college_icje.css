@@ -20,7 +20,7 @@ a {
 
 
 .title_org {
-  margin-top: 3%;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   margin-bottom: 0%; /* Adjust margin as needed */
@@ -30,26 +30,26 @@ a {
   margin-top: 45px;
   margin-right: 10px; /* Adjust margin as needed */
   font-size: 35px; /* Adjust size as needed */
-  color:#46E068;
+  color:#2c6346;
 }
 
 #right {
   margin-top: 45px;
   margin-left: 10px; /* Adjust margin as needed */
   font-size: 35px; /* Adjust size as needed */
-  color:#46E068;
+  color:#2c6346;
 }
 
  h1{
   text-align: center;
   margin-top: 15%;
-  color:#46E068;
+  color:#2c6346;
   font-size: 30px;
 }
 
 
 h2{
-  color:#46E068;
+  color:#2c6346;
   font-size: 20px;
 
 }
@@ -112,7 +112,7 @@ h2 {
   /* Your styles for the program titles */
   margin-bottom: 5px; /* Adjust margin as needed */
   font-size: 25px;
-  color:#46E068;
+  color:#2c6346;
 }
 
 .program-box p {

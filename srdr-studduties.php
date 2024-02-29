@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (isset($_GET['logout'])) {
+  // Unset all session variables
+  $_SESSION = [];
+
+  // Destroy the session
+  session_destroy();
+
+  // Redirect to the login page after logout
+  header("Location: user_register.php");
+  exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +57,7 @@
                     <li><a href="courses.php">Colleges</a></li>
                     <li><a href="games/gameoptions.php">Games</a></li>
                     <li><a href="contact_us.php">Contact Us</a></li>
+            <li id=exit><a href="?logout=true">Log Out</a></li>
                 </ul>
             </nav>
         </header>

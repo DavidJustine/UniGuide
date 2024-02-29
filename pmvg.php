@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/pmvg.css">
+    <link rel="stylesheet" href="css/uniguide-home.css">
 
   <style>
   .exit{
@@ -16,11 +17,6 @@
   height: 100px;
 }
 
-.exit img{
-  width: 50px;
-  height: 50px;
-
-}
 </style>
 
 
@@ -28,9 +24,7 @@
 
 <body>
 
-<div class="exit">
-    <a href="./home.php"><img src="icons/back.png" alt=""></a>
-</div>
+<?php include 'uniguide-navbar.php'; ?>
 
     <main class="main">
         <h1>DMMMSU PVMG</h2>

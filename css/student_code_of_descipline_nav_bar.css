@@ -162,7 +162,7 @@ body {
  /* New styles for the side navbar */
  .sidenavbar {
   position: fixed;
-  top: 17%;
+  top: 21.5%;
   left: 0;
   height: 100%;
   width: 270px;
@@ -1032,3 +1032,7 @@ tbody tr:nth-child(even) {
   background-color: #fffcd7;
 }
 
+
+#exit{
+  margin-left:55%;
+}

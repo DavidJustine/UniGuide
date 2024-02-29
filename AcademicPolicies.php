@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (isset($_GET['logout'])) {
+  // Unset all session variables
+  $_SESSION = [];
+
+  // Destroy the session
+  session_destroy();
+
+  // Redirect to the login page after logout
+  header("Location: user_register.php");
+  exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +26,7 @@
     <link href="https://fonts.cdnfonts.com/css/sansserifflf" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/academic_policy_nav_bar.css">
+    <link rel="stylesheet" href="css/uniguide-home.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 </head>
@@ -39,9 +57,11 @@
                     <li><a href="courses.php">Colleges</a></li>
                     <li><a href="games/gameoptions.php">Games</a></li>
                     <li><a href="contact_us.php">Contact Us</a></li>
+                    <li id=exit><a href="?logout=true">Log Out</a></li>
                 </ul>
             </nav>
         </header>
+
 
     <div class="default-text">
     ACADEMIC POLICIES<br>
@@ -198,8 +218,6 @@
     </div>
     
 </div>
-
-
 
 </body>
 </html>

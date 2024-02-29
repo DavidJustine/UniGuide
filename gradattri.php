@@ -6,12 +6,12 @@
   <title>Blog Slider</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/gradattri.css">
+  <link rel="stylesheet" href="css/uniguide-home.css">
+  
 </head>
 <body>
 
-<div class="exit">
-    <a href="./home.php"><img src="icons/back.png" alt=""></a>
-</div>
+<?php include 'uniguide-navbar.php'; ?>
 
 <div class="centered-container">
         <h2>Graduate Attributes</h2>
