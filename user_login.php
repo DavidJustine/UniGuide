@@ -210,7 +210,7 @@
 		<form action="user_login_process.php" method="post">
     <table>
         <tr>
-		<td><input type="text" id="student_id" name="student_id" placeholder="xxx-xxxx-x" /></td>
+		<td><input type="text" id="student_id" name="student_id" placeholder="Student-ID" /></td>
         </tr>
         <tr>
             <td><input type="password" id="password" name="password" placeholder="Password" /></td>

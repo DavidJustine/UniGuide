@@ -264,6 +264,14 @@ $visit_counts = array_values($visit_data);
             box-shadow: 0 0 5px #46e068; /* Add a subtle box shadow on focus */
         }
 
+        #feedbackTable {
+        width: 98%; /* Ensuring the table takes up the available width */
+        }
+        #feedbackTable td:nth-child(2) { /* Targeting the second column (message) */
+        white-space: pre-wrap; /* Allowing wrapping of long lines */
+        word-wrap: break-word; /* Breaking long words to prevent overflow */
+        }
+
         #complaintsTable button {
             padding: 5px 10px;
             border: none;
@@ -280,12 +288,12 @@ $visit_counts = array_values($visit_data);
         }
 
         #complaintsTable button.replied {
-            background-color: #00ff00; /* Green color for replied */
+            background-color: #008000; /* Green color for replied */
             color: #ffffff;
         }
 
         #complaintsTable button:disabled {
-            background-color: #00ff00; /* Green color for replied */
+            background-color: #008000; /* Green color for replied */
             color: #ffffff;
             cursor: not-allowed;
         }
@@ -357,12 +365,16 @@ $visit_counts = array_values($visit_data);
 
         #dashboardTable{
             border-collapse: collapse;
-            width:418px;
+            width:480px;
             margin-top:10px;
+            max-height: 500px; /* Limiting the height to prevent excessive scrolling */
+            overflow-y: auto; /* Adding vertical scrollbar when content exceeds max height */
         }
+        
 
         #title_stud h2{
             margin-top:20px;
+            margin-bottom:30px;
         }
     </style>
 </head>
@@ -434,10 +446,12 @@ $visit_counts = array_values($visit_data);
 
         </div>
 
-        <!-- Dashboard Table -->
-        <div style="display: flex; gap:150px;">
+      <!-- Dashboard Table -->
+<div style="display: flex; gap:100px;">
     <div>
         <h2 id="title_stud">Registered Students</h2>
+        <!-- Search input -->
+        <input type="text" id="searchInput" placeholder="Search..." style="position: sticky; top: 0; z-index: 1; background-color: white;" autocomplete="off">
         <table id="dashboardTable" border="1">
             <tr>
                 <th id=user>Student ID</th>
@@ -465,30 +479,53 @@ $visit_counts = array_values($visit_data);
             ?>
         </table>
     </div>
-
     <div>
-        <h2>Registered Students by University</h2>
-        <div style="width: 80%;">
-        <canvas id="studentChart" width="500" height="650"></canvas>
+        <h2>Registered Students Count</h2>
+        <div style="width: 99%; margin-top:50px;">
+            <canvas id="studentChart" width="500" height="700"></canvas>
         </div>
         <?php
-         $role_counts_sql = "SELECT role, COUNT(*) AS count FROM users GROUP BY role";
-         $role_counts_result = $conn->query($role_counts_sql);
-     
-         $role_counts = array(); // Array to store role counts
-     
-         if ($role_counts_result->num_rows > 0) {
-             // Fetch role counts and store them in an array
-             while ($row = $role_counts_result->fetch_assoc()) {
-                 $role_counts[$row["role"]] = $row["count"];
-             }
-         } else {
-             echo "No data available";
-         }
+        $role_counts_sql = "SELECT role, COUNT(*) AS count FROM users GROUP BY role";
+        $role_counts_result = $conn->query($role_counts_sql);
+
+        $role_counts = array(); // Array to store role counts
+
+        if ($role_counts_result->num_rows > 0) {
+            // Fetch role counts and store them in an array
+            while ($row = $role_counts_result->fetch_assoc()) {
+                $role_counts[$row["role"]] = $row["count"];
+            }
+        } else {
+            echo "No data available";
+        }
         ?>
-
-
     </div>
+</div>
+    
+<!-- JavaScript for search functionality -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById('searchInput');
+        const rows = document.querySelectorAll('#dashboardTable tr');
+
+        searchInput.addEventListener('input', function () {
+            const searchTerm = searchInput.value.toLowerCase();
+            rows.forEach(row => {
+                let found = false;
+                row.querySelectorAll('td').forEach(cell => {
+                    if (cell.textContent.toLowerCase().includes(searchTerm)) {
+                        found = true;
+                    }
+                });
+                if (found) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
 
     <script>
         // PHP array holding counts of registered students per role
@@ -529,7 +566,7 @@ $visit_counts = array_values($visit_data);
             }
         });
     </script>
-    </div>
+
 
    
 
