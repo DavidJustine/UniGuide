@@ -254,3 +254,68 @@ courses-.container{
 .space{
   margin-top: 10%;
 }
+
+.flex-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+#coe-heading,
+#cas-heading{
+ width:50px;
+}
+#com-heading,
+#cot-heading{
+  width:60px;
+}
+#ce-heading{
+  width:25px;
+}
+#cit-heading{
+  width:35px;
+}
+
+#icje-heading{
+  width:55px;
+}
+
+
+#coe-logo{
+  width: 87px; /* Adjust the width as needed */
+  height: 90px; /* Maintain aspect ratio */
+  margin-top:60px;
+  margin-right:100px;
+}
+
+#cas-logo,
+#cit-logo{
+  width: 65px; /* Adjust the width as needed */
+  height: 65px; /* Maintain aspect ratio */
+  margin-top:60px;
+  margin-right:100px;
+}
+
+#com-logo{
+  width: 84px; /* Adjust the width as needed */
+  height: 84px; /* Maintain aspect ratio */
+  margin-top:60px;
+  margin-right:100px;
+}
+
+#ce-logo{
+  width: 76px; /* Adjust the width as needed */
+  height: 76px; /* Maintain aspect ratio */
+  margin-top:60px;
+  margin-right:100px;
+}
+#cot-logo,
+#icje-logo{
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Maintain aspect ratio */
+  margin-top:60px;
+  margin-right:100px;
+}
+
+.main-logo{
+  display: flex;
+}
