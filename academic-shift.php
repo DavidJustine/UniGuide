@@ -221,7 +221,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/shift1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         A student may apply for a shift of course, 
@@ -233,7 +240,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/shift2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         Shifting of course may only be allowed after a term.

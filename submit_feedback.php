@@ -4,7 +4,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "feedback";
+$dbname = "uniguide";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

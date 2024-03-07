@@ -221,7 +221,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/exam1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         Schedule of Examinations <br><br>
@@ -232,7 +239,14 @@ The schedule for the midterm and final examinations shall be prepared by the Reg
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/exam2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         Types of Assessment <br><br>
@@ -243,7 +257,14 @@ Faculty members enjoy the full academic freedom of deciding the type/s of examin
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/exam3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 3</h1>
         <p class="card__description">
         Preparation and Reproduction of Assessment Questions <br><br>
@@ -255,7 +276,14 @@ Sec. 1 The individual faculty member prepares his/her own valid examination base
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/exam4.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 4</h1>
         <p class="card__description">
         Assessment Proctors and Evaluators <br><br>
@@ -267,7 +295,14 @@ Faculty members and academic staff shall act as proctors and evaluators of the e
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/exam5.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 5</h1>
         <p class="card__description">
         Reporting Cases of Cheating and Other Forms of Dishonesty  <br><br>

@@ -222,7 +222,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         Whenever a student has been absent from his class for 
@@ -238,7 +245,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance1.2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 1A</h1>
         <p class="card__description">
         A student who belongs to the people with special 
@@ -251,7 +265,14 @@ if (isset($_GET['logout'])) {
   
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance1.3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 1B</h1>
         <p class="card__description">
         A Graduate student can be dropped after four (4) unexcused absences.
@@ -262,7 +283,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         An undergraduate student who incurs absences equivalent to 20 percent (20%)
@@ -279,7 +307,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 3</h1>
         <p class="card__description">
         A student enrolled at the DOUS under the group paced learning scheme is required
@@ -294,7 +329,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance4.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 4</h1>
         <p class="card__description">
         Absences due to late registration shall be considered as absence from class.
@@ -305,7 +347,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance5.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 5</h1>
         <p class="card__description">
         Excuse slips for absences shall be obtained from the Office of the SAS 
@@ -317,7 +366,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/attendance6.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 6</h1>
         <p class="card__description">
         To be considered present, the student should attend at least eighty 

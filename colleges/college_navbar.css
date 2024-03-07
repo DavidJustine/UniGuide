@@ -156,22 +156,3 @@ body {
     width:150px;
   }
   
-@media (min-width: 550px) {
-    .navbar {
-        all: unset;
-        display: block;
-    }
-    .navbar ul {
-        flex-direction: row;
-        gap: 40px;
-        font-size: 17px;
-    }
-    .navbar ul a {
-        font-size: inherit;
-    }
-    .close-nav,
-    .menu-bar {
-        display: none;
-    }
-    
-}

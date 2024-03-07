@@ -207,56 +207,56 @@
     </div>
 
     <div class="container-wrapper">
-        <a href="AcademicPolicies.php" class="container-link">
+        <a href="academic-calendar.php" class="container-link">
             <div class="container">
                 <img src="icons/academic-policy.png" alt="cont 1">
                 <div class="overlay"><h3>Academic Policies</h3></div>
             </div>
         </a>
         
-        <a href="SAS.php" class="container-link">
+        <a href="sas-principle.php" class="container-link">
             <div class="container">
                 <img src="icons/sas.png" alt="cont 2">
                 <div class="overlay"><h3>Student Affairs and Services</h3></div>
             </div>
         </a>
 
-        <a href="SASCP.php" class="container-link">
+        <a href="sascp-ratio.php" class="container-link">
             <div class="container">
                 <img id="con-plan" src="icons/con-plan.png" alt="cont 3">
                 <div class="overlay"><h3>Student Affairs and Services Continuity Plan</h3></div>
             </div>
         </a>
 
-        <a href="SSAFAP.php" class="container-link">
+        <a href="ssafap-goal-objective.php" class="container-link">
             <div class="container">
                 <img src="icons/assist-prog.png" alt="cont 4">
                 <div class="overlay"><h3>Student Scholarship, Assistantship & Financial Assistance Program</h3></div>
             </div>
         </a>
 
-        <a href="SCOD.php" class="container-link">
+        <a href="scod-offense-penal.php" class="container-link">
             <div class="container">
                 <img src="icons/discipline.png" alt="cont 5">
                 <div class="overlay"><h3>Student Code of Discipline</h3></div>
             </div>
         </a>
 
-        <a href="SBO.php" class="container-link">
+        <a href="sbo-sboc1.php" class="container-link">
             <div class="container">
                 <img src="icons/stud-body.png" alt="cont 6">
                 <div class="overlay"><h3>Student Body Organization Constitution and By-Laws</h3></div>
             </div>
         </a>
 
-        <a href="SRDR.php" class="container-link">
+        <a href="srdr-studrights.php" class="container-link">
             <div class="container">
                 <img src="icons/stud-right.png" alt="cont 7">
                 <div class="overlay"><h3>Students Rights, Duties and Responsibilities</h3></div>
             </div>
         </a>
 
-        <a href="MutualAidGuidelines.php" class="container-link">
+        <a href="MutualAidGuidelines-MAG.php" class="container-link">
             <div class="container">
                 <img src="icons/mutual-aid.png" alt="cont 8">
                 <div class="overlay"><h3>Mutual Aid Guidlines</h3></div>

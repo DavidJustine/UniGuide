@@ -222,7 +222,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/retention1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1.a</h1>
         <p class="card__description">
         The following standards shall be observed:
@@ -234,7 +241,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/retention1.2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 1.b</h1>
         <p class="card__description">
         b. Student who obtains a final grade lower than 75 in 37% to 50% of the total number of academic units he is enrolled in shall be placed on probation for the next semester and shall be allowed to enroll in not more than 50% of the normal academic period.
@@ -245,7 +259,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/retention1.3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1.c</h1>
         <p class="card__description">
         A student who obtains a final grade lower than 75 in more than 50% of the total number of academic units enrolled shall no longer be allowed to enroll in the same course he is enrolled in. He may be allowed to shift to another course of his interest.
@@ -256,7 +277,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/retention2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 2</h1>
         <p class="card__description">
         A student who obtains a final grade lower than 75 in all (100%) of the academic units shall be permanently barred from re-admission to the University.

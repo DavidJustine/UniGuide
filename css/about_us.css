@@ -2,12 +2,9 @@
 
 
 
-*{
-  box-sizing: border-box;
-}
+
 .top-part{
   flex-direction: column;
-  
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
@@ -31,6 +28,11 @@
 #title_org{
   align-items: center;
   justify-content: center;
+}
+#title_org h1{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 h2{
@@ -110,7 +112,7 @@ button:hover {
 .row4 {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 99%;
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -237,17 +239,7 @@ li i {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .faq-section {
-    flex-direction: column;
-  }
 
-  .faq,
-  .feedback {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-}
 
 .hymn{
   text-align: center;
@@ -403,4 +395,11 @@ li i {
 
 #exit{
   margin-left:55%;
+}
+
+.comp{
+  align-items:center;
+  justify-content: center;
+  margin-left:16%;
+  width:1280px;
 }

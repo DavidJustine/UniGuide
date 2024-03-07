@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
 }
 
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -221,7 +221,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/cross1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         Cross-enrollment to deregulated private HEls/another SUC/within 
@@ -235,7 +242,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/cross2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         No student is allowed to cross-enroll in two or more HEIs within a term.
@@ -246,7 +260,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/cross3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 3</h1>
         <p class="card__description">
         The University shall give no credit for any subject taken by 

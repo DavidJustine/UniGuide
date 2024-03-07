@@ -9,7 +9,7 @@ if (isset($_GET['logout'])) {
   session_destroy();
 
   // Redirect to the login page after logout
-  header("Location: user_register.php");
+  header("Location: ../user_register.php");
   exit();
 }
 

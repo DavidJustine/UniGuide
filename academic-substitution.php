@@ -222,7 +222,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/substitution1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         Substitution of subjects may be allowed when a student is pursuing a curriculum that has been superseded by a new one upon approval by the Program Chair/Institute Director/Dean.
@@ -233,7 +240,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/substitution2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         Every petition for substitution shall only involve subjects allied to each other and the substituted subject shall have equal number of units or greater than the number of units of the required subject.
@@ -244,7 +258,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/substitution3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 3</h1>
         <p class="card__description">
         No substitution shall be allowed for a subject in which a student failed. However, this may be allowed when the proposed substitution substantially covers the same subject matter as the required subject.</p>

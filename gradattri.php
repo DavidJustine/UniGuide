@@ -1,3 +1,19 @@
+<?php
+session_start();
+
+if (isset($_GET['logout'])) {
+  // Unset all session variables
+  $_SESSION = [];
+
+  // Destroy the session
+  session_destroy();
+
+  // Redirect to the login page after logout
+  header("Location: user_register.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +24,7 @@
   <link rel="stylesheet" href="css/gradattri.css">
   <link rel="stylesheet" href="css/uniguide-home.css">
   
-</head>
+</head> 
 <body>
 
 <?php include 'uniguide-navbar.php'; ?>
@@ -87,7 +103,8 @@
     </div>
     <div class="blog-slider__pagination"></div>
   </div>
-
+<br>
+<br><br><br><br><br>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/gradattri.js"></script>
 </body>

@@ -103,6 +103,7 @@ if (isset($_GET['logout'])) {
     <h2>GRANTS AND SCHOLARHIPS<br><br></h2>
 </div>
 
+<section id="grant">
 <button id="button-scho" onclick="window.location.href='scholarship.php';">
         Get Scholarship
       </button>
@@ -360,7 +361,7 @@ if (isset($_GET['logout'])) {
 <p>Scholarship in the University classified into:</p><br><br>
 <p>A. Academic Scholarship - full of partial</p>
 <p>B. Scholarship Grants - athletics, special talents, leadership, priviledges for DMMMSU personnel and/or other dependents.</p>
-<br><br><br><br><br><br>
+<br><br>
 
 <h2>Policies and Guidelines:<br><br></h2>
 
@@ -403,7 +404,7 @@ if (isset($_GET['logout'])) {
 </div>
         </div>
 <!-- END SLIDE -->
-<br><br><br><br><br>
+<br><br>
 <h2>Policies and Guidelines:<br><br></h2>
 
 <h3>A. Free Higher Education</h3><br>
@@ -444,7 +445,7 @@ if (isset($_GET['logout'])) {
 to the Campus cashier for release of allowance. ARS are only issued to scholars who have submitted a complete 
 <br>set of requirements.</p>
 
-<br><br><br><br><br>
+
 <h2>Responsibilities of Scholars/Grantees:<br><br></h2>
 
 <!-- START SLIDE -->
@@ -500,8 +501,9 @@ to the Campus cashier for release of allowance. ARS are only issued to scholars 
 </div>
         </div>
 <!-- END SLIDE -->
-
-<br><br><br><br><br><br>
+<br><br><br><br><br>
+</section>
+<div id=marg></div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/standards.js"></script>
   

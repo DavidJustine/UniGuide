@@ -221,7 +221,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Student Attendance</h1>
         <p class="card__description">
         Sec. 1 Late registration shall be considered as absence from a class. <br><br>
@@ -232,7 +239,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Classroom Discipline</h1>
         <p class="card__description">
         Sec. 1 Faculty members shall be responsible for all student activities inside the classroom.
@@ -244,7 +258,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Class Participation</h1>
         <p class="card__description">
         Sec. 1 Class participation of students means their being present and attentive in class. When applicable, at least 10% of the final grade should be accorded to class participation.
@@ -255,7 +276,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg4.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Evaluating Student Performance</h1>
         <p class="card__description">
         Sec. 1 Faculty members should evaluate students' performance objectively by constructing valid and reliable tests and examinations.
@@ -267,7 +295,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg5.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Evaluating Student Performance</h1>
         <p class="card__description">
         Sec. 3 All quizzes and tests should be returned promptly to the students after the test for immediate feedback.
@@ -279,7 +314,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg6.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Evaluating Student Performance</h1>
         <p class="card__description">
         Sec. 5 Exemptions from taking the final examinations may be extended to deserving students with a tentative grade of 95 or better.
@@ -291,7 +333,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg7.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Evaluating Student Performance</h1>
         <p class="card__description">
         Sec. 7 mandates instructors to spot students facing academic challenges (like midterm failures, absences, missing assignments), notify them of their status, empathize with those seeking help, advise on improvement, and offer consistent feedback.        </p>
@@ -301,7 +350,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg8.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Medium of Instruction</h1>
         <p class="card__description">
         Sec. 1 The institution adopts the Bilingual Education Policy which uses Filipino and English as mediums of instruction and communication. Specifically, this means that Filipino and English shall be used as mediums of instruction in definite subjects taking into account the nature of the discipline and the learners' needs.        </p>
@@ -311,7 +367,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg9.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Medium of Instruction</h1>
         <p class="card__description">
         Sec. 2 Faculty members shall express themselves fluently in English. Outside the classroom, faculty members are encouraged to maintain conversations in English, especially when talking to students.        
@@ -322,8 +385,15 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
-        <h1 class="card__title">Preparation of Course Syllabi & Other Requirements</h1>
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/classreg10.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
+        <h1 class="card__title" id="last-title">Preparation of Course Syllabi & Other Requirements</h1>
         <p class="card__description">
         Sec. 1 Departments share updated subject syllabi and learning plans with faculty before classes. Faculty working on the same subjects collaborate for content enhancement and reforms, guided by the course syllabus/learning plan.</p>
 </div>

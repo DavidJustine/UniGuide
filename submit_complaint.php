@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "feedback";
+    $dbname = "uniguide";
 
     try {
         // Create connection
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Prepare SQL statement to insert data into the database
-        $stmt = $conn->prepare("INSERT INTO compform (stud_id, name, complaint) VALUES (:stud_id, :name, :complaint)");
+        $stmt = $conn->prepare("INSERT INTO compform (stud_id, name, complaint, status) VALUES (:stud_id, :name, :complaint, 'pending')");
         $stmt->bindParam(':stud_id', $_POST['stud_id']);
         $stmt->bindParam(':name', $_POST['name']);
         $stmt->bindParam(':complaint', $_POST['complaint']);

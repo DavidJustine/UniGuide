@@ -222,7 +222,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/leave1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         A student may discontinue or go on leave of absence from his program of study for a period not exceeding two (2) consecutive terms as approved by proper authorities.
@@ -233,7 +240,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/leave2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         A student who discontinues temporarily his program of study is required to submit an accomplished and approved leave of absence form to the Office of the Registrar and Office of the SAS, duly noted by parent/guardian recommended by the Program Chair/Director/Dean concerned and approved by the Chancellor/Executive Director.
@@ -244,7 +258,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/leave3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 3</h1>
         <p class="card__description">
         A student who goes on leave for a particular semester must return to the University on the next semester immediately following the leave of absence to maintain a regular status.
@@ -255,7 +276,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/leave4.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 4</h1>
         <p class="card__description">
         In case the curricular program pursued by the student has been revised, he shall follow the revised curricular program, unless he is able to secure an approval from the Chancellor/Dean/Director to continue with his previous curriculum.
@@ -266,7 +294,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/leave5.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 5</h1>
         <p class="card__description">
         A student who returns after five (5) continuous years of absence from the University may be accepted for enrollment, forfeiting all units previously earned and including the opportunity to vie for honor.

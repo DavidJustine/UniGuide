@@ -221,7 +221,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1.a</h1>
         <p class="card__description">
         Only the courses that conform to DMMMSU's offerings are considered for validation.
@@ -232,7 +239,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 1.b</h1>
         <p class="card__description">
         Validation shall be undertaken within the first term from the date of admission into the University.</p>
@@ -242,7 +256,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1.c</h1>
         <p class="card__description">
         DOUS. Validation of courses, training activities and seminars may be given credits subject to the evaluation of a committee.
@@ -253,7 +274,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid4.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1.d</h1>
         <p class="card__description">
         Undergraduate. Courses may be given credit subject to the
@@ -265,7 +293,14 @@ evaluation of a committee using an institutional policy on validation.
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid5.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 2</h1>
         <p class="card__description">
         A validation fee shall be charged.
@@ -276,7 +311,14 @@ evaluation of a committee using an institutional policy on validation.
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid6.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 3</h1>
         <p class="card__description">
         Validation should be administered and checked by the Instructor assigned by the Program Chair/Institute Director/Dean.
@@ -287,7 +329,14 @@ evaluation of a committee using an institutional policy on validation.
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid7.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 4</h1>
         <p class="card__description">
         Validation marks are either "Sustained" or "Failed" and should be submitted within the term.
@@ -298,7 +347,14 @@ evaluation of a committee using an institutional policy on validation.
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/valid8.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 5</h1>
         <p class="card__description">
         A degree holder from a State College or University other than DMMMSU may be credited equivalent course without validating them, provided, that such credits shall not exceed 50% of the total number of units required for graduation. The subjects to be credited shall be determined by the Program Chair /Institute Director/Dean concerned.

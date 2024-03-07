@@ -221,7 +221,14 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/load1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         Undergraduate <br><br>
@@ -233,7 +240,14 @@ a. A student enrolled in a regular semester is limited to take the specified num
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/load2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         Graduate Studies <br><br>
@@ -244,7 +258,14 @@ A full graduate student could enroll a maximum of 15 units during the semester a
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/load3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 3</h1>
         <p class="card__description">
         Undergraduate<br><br> Trainees for summer should have no other subject except OJT. During regular semester, graduating students may be allowed to enroll a maximum of 6 units only in addition to OJT.
@@ -255,7 +276,14 @@ A full graduate student could enroll a maximum of 15 units during the semester a
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/load4.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 4</h1>
         <p class="card__description">
         DOUS<br><br> Students enrolled in the individualized or self-paced learning who have not completed the requirements of the course within five (5) months will be given a grade of incomplete.

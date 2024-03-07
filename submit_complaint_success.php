@@ -15,17 +15,46 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/about_us.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox/dist/basicLightbox.min.css">
+    <link rel="stylesheet" href="css/uniguide-home.css">
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox/dist/basicLightbox.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     
 
 
 </head>
 <body>
 
-<?php include 'about_nav_bar.php'?>
+<header class="container-masthead">
+        <div class="row"><div class="large-9  columns">
+                <h1 class="logo">
+                    <a href="https://www.dmmmsu.edu.ph/" title="Don Mariano Marcos Memorial State University" rel="home">
+                    <div id="textlogo-wrapper">
+                        <div id="textlogo-image">
+                            <img alt="Don Mariano Marcos Memorial State University Official Logo" src="https://www.dmmmsu.edu.ph/wp-content/uploads/2023/07/baong-piipinas-with-dmsu-trans-1.png" ></div>
+                        </div>
+                    </div>
+                    </a>
+                </h1>
+            <div id="textlogo-inner-wrapper">
+                    <div id="agency-heading">Republic of the Philippines</div>
+                    <div id="agency-line"></div>
+                    <div id="agency-name">Don Mariano Marcos Memorial State University</div>
+                    <div id="agency-tagline">La Union, Philippines | dmmmsu@dmmmsu.edu.ph</div>
+            </div>
+        </div>
+        <nav class="navbar">
+                <ul>
+                    <li><a href="uniguide-home.php">Home</a></li>
+                    <li><a href="about_us.php">About Us</a></li>
+                    <li><a href="courses.php">Colleges</a></li>
+                    <li><a href="games/gameoptions.php">Games</a></li>
+                    <li><a href="contact_us.php">Contact Us</a></li>
+            <li id=exit><a href="?logout=true">Log Out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<section class="comp">
 <div class="title_org">
   <h1>COMPLAINT FORM</h1>
 </div>
@@ -43,7 +72,7 @@ session_start();
     </div>
   </div>
 </div>
-
+</section>
 
 
 

@@ -191,7 +191,7 @@ body {
 }
 
 .sidenavbar::-webkit-scrollbar-thumb:hover {
-  background-color: #358b5d; /* Set the color of the scrollbar thumb when hovered */
+  background-color: #4bc986; /* Set the color of the scrollbar thumb when hovered */
 }
 
 .sidebar-item {
@@ -216,7 +216,7 @@ body {
 }
 
 .sidebar-item:hover {
-    background-color: #0eab38; /* Change the background color on hover */
+    background-color: #4bc986; /* Change the background color on hover */
 }
 
 .sidebar-item:hover .sidebar-item-img {
@@ -285,6 +285,10 @@ body {
   margin-left: 4%;
   margin-top: 20px;
   width:500px;
+}
+
+#last-title{
+  font-size: 35px;
 }
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -465,7 +469,7 @@ body {
   
   .timeline button {
     display: block;
-    background-color: #0eab38;
+    background-color: #2C6346;
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -561,7 +565,7 @@ body {
     font-size: 1.2rem;
     line-height: 1;
     text-transform: uppercase;
-    color: #2fa01b;
+    color: #2C6346;
     letter-spacing: 1.5px;
   }
   
@@ -578,13 +582,13 @@ body {
   
   .timeline__event__icon {
     border-radius: 8px 0 0 8px;
-    background: #2fa01b;
+    background: #2C6346;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-basis: 40%;
     font-size: 2rem;
-    color: #2fa01b;
+    color: #2C6346;
     padding: 20px;
   }
   
@@ -608,7 +612,7 @@ body {
     content: "";
     width: 2px;
     height: 100%;
-    background: #4cdd33;
+    background: #2C6346;
     position: absolute;
     top: 52%;
     left: -3.5rem;
@@ -625,7 +629,7 @@ body {
     left: -6rem;
     top: 50%;
     transform: translateY(-50%);
-    border: 2px solid #4cdd33;
+    border: 2px solid #2C6346;
   }
   
   .timeline__event--type2:before {
@@ -655,23 +659,14 @@ body {
     content: none;
   }
   
-  @media (max-width: 786px) {
-    .timeline__event {
-      flex-direction: column;
-    }
-    
-    .timeline__event__icon {
-      border-radius: 4px 4px 0 0;
-    }
-  }
-  
+
 
 
 /*----------------------------------------------------acad-sched-conduct-table----------------------------------*/
 table {
     align-items: center;
     margin-right: 150px;
-    border-color: #0eab38;
+    border-color: #2C6346;
     border-radius: 5px;
     margin-bottom:50px;
     background-color: white;
@@ -686,7 +681,7 @@ th {
 }
 
 thead tr {
-  background-color: #0eab38;
+  background-color: #2C6346;
   color: #ffffff;
 
 }
@@ -707,7 +702,7 @@ tbody tr:nth-child(even) {
 h1 {
     text-align: center;
     font-family: 'Futura Md BT', sans-serif;
-    color:#0eab38;
+    color:#2C6346;
     margin-right: 50px;
 }
 
@@ -837,29 +832,8 @@ h1 {
     background-color:#2c6346;
 }
 
-
-@media (min-width: 550px) {
-    .navbar {
-        all: unset;
-        display: block;
-    }
-    .navbar ul {
-        flex-direction: row;
-        gap: 40px;
-        font-size: 17px;
-    }
-    .navbar ul a {
-        font-size: inherit;
-    }
-    .close-nav,
-    .menu-bar {
-        display: none;
-    }
-    
-}
-
 h2 {
-  color: #0eab38;
+  color: #2C6346;
   font-size: 24px;
   margin-bottom: 10px;
   margin-left: 25%;
@@ -870,7 +844,7 @@ p {
   margin-bottom: 30px;
   text-align: justify;
   margin-left: 25%;
-  color: #0eab38;
+  color: #2C6346;
   margin-right: 150px;
 }
 

@@ -25,12 +25,11 @@ if (isset($_GET['logout'])) {
     <link href="https://fonts.cdnfonts.com/css/adam-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansserifflf" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/time.css">
+
     <link rel="stylesheet" href="css/uniguide-home.css">
-    <link rel="stylesheet" href="css/calendar.css">
+
     <link rel="stylesheet" href="css/academic_policy_nav_bar.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <style>
             p {
             margin-right: 150px;

@@ -222,7 +222,15 @@ if (isset($_GET['logout'])) {
 <div class="cards">
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+        
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/preq1.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 1</h1>
         <p class="card__description">
         The rules on sequence of subjects in the curriculum of the course being taken must be followed.
@@ -233,7 +241,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/preq2.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title"> Sec. 2</h1>
         <p class="card__description">
         A student is not allowed a subject without passing its prerequisite.
@@ -244,7 +259,14 @@ if (isset($_GET['logout'])) {
 
   <div class="card" data-index="0">
     <div class="card__inner">
-      <div class="card__content">
+    <div class="card__image-container">
+        <img
+          class="card__image"
+          src="images/preq3.png"
+          alt=""
+        />
+      </div>
+      <div class="card__content" id="card-con">
         <h1 class="card__title">Sec. 3</h1>
         <p class="card__description">
         Prerequisite subject enrolled in for the second time may be simultaneously taken with the higher subject upon approval of the Institute Director/Dean and recommendation of the Program Chair as noted by the Registrar. However, if the student failed the prerequisite subject, the higher subject will also be given a failing grade.

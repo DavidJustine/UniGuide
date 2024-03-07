@@ -156,26 +156,6 @@ body {
   width:150px;
 }
 
-@media (min-width: 550px) {
-    .navbar {
-        all: unset;
-        display: block;
-    }
-    .navbar ul {
-        flex-direction: row;
-        gap: 40px;
-        font-size: 17px;
-    }
-    .navbar ul a {
-        font-size: inherit;
-    }
-    .close-nav,
-    .menu-bar {
-        display: none;
-    }
-    
-}
-
 /*------------------------------------------------------------side_nav_bar-------------------------------------------------------------------------------------------*/
 
 /* New styles for the side navbar */
@@ -412,9 +392,7 @@ body {
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-html {
-    font-size: 14px;
-  }
+
   
   .timeline h2 {
     font-family: 'Futura Md BT', sans-serif;
