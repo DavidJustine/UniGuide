@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 29, 2024 at 01:19 AM
+-- Generation Time: Mar 08, 2024 at 03:26 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -70,7 +70,8 @@ INSERT INTO `compform` (`comp_id`, `stud_id`, `name`, `complaint`, `status`) VAL
 (8, '201-1111-1', 'John Doe', 'From unclear announcements to sudden changes in plans, it\'s frustrating to navigate the school\'s communication chaos. Personally, it often leaves me feeling confused and out of the loop.', 'pending'),
 (9, '201-1111-1', 'John Doe', ' In the sea of students, I can\'t help but feel like just another face in the crowd. Personally, I wish there was more individual attention from teachers, especially in those larger classes where it\'s easy to get lost.', 'pending'),
 (10, '201-1111-1', 'John Doe', 'Personally, dealing with the social scene at school can be tough. Whether it\'s facing bullying, feeling left out, or navigating through cliques, the social pressures make the whole experience more challenging.', 'replied'),
-(11, '201-1111-1', 'John Doe', 'Personally, it\'s disheartening to study in classrooms with worn-out furniture or use outdated technology. Limited access to modern facilities makes me wish for a more conducive learning environment.', 'replied');
+(11, '201-1111-1', 'John Doe', 'Personally, it\'s disheartening to study in classrooms with worn-out furniture or use outdated technology. Limited access to modern facilities makes me wish for a more conducive learning environment.', 'replied'),
+(12, '201-1671-2', 'gleanneyvankhyle.orofino@student.dmmmsu.edu.ph', 'I am reaching out to express my concerns regarding environmental issues on campus. There is a noticeable lack of recycling bins and sustainable practices, contributing to unnecessary waste and pollution.', 'pending');
 
 -- --------------------------------------------------------
 
@@ -93,7 +94,8 @@ INSERT INTO `feedbacks` (`feed_id`, `message`) VALUES
 (3, 'Interactive Elements: The incorporation of interactive elements, such as links and clickable sections, adds a dynamic touch and enhances engagement.'),
 (4, 'The use of graphics and illustrations not only breaks up the text but also adds visual appeal, making the handbook more enjoyable to read.'),
 (5, 'If applicable, improving the search function within the handbook would allow users to quickly find specific information, contributing to a more efficient user experience.'),
-(6, 'Ensure the handbook is accessible to users with diverse needs. Implement features such as alt text for images and consider compatibility with screen readers for a more inclusive user experience.');
+(6, 'Ensure the handbook is accessible to users with diverse needs. Implement features such as alt text for images and consider compatibility with screen readers for a more inclusive user experience.'),
+(7, 'I want to thank you for this online student handbook');
 
 -- --------------------------------------------------------
 
@@ -118,7 +120,10 @@ INSERT INTO `users` (`student_id`, `username`, `password`, `role`) VALUES
 ('102-1111-1', 'John Doe', '123', 'NLUC student'),
 ('302', 'Doe John', '123', 'SLUC student'),
 ('102-3333-1', 'Don Mar', '123', 'NLUC student'),
-('301-3333-3', 'Harley Mario', '123', 'SLUC student');
+('301-3333-3', 'Harley Mario', '123', 'SLUC student'),
+('201-1660-2', 'Niels Azer Agustin', '321', 'MLUC student'),
+('201-1481-2', 'Trisha Mae Cervania', '321', 'MLUC student'),
+('201-1634-2', 'Sheena Marie Ann Joyce Cruz Rafanan', '123', 'MLUC student');
 
 -- --------------------------------------------------------
 
@@ -148,7 +153,20 @@ INSERT INTO `visits` (`visit_id`, `user_id`, `role`, `visit_timestamp`) VALUES
 (8, NULL, 'Guest', '2024-02-28 13:15:21'),
 (9, NULL, 'Guest', '2024-02-28 13:47:50'),
 (10, '0', 'NLUC student', '2024-02-28 15:00:53'),
-(11, '0', 'SLUC student', '2024-02-28 15:02:14');
+(11, '0', 'SLUC student', '2024-02-28 15:02:14'),
+(12, '0', 'MLUC student', '2024-02-29 02:08:26'),
+(13, '0', 'MLUC student', '2024-02-29 02:09:19'),
+(14, '201', 'MLUC student', '2024-02-29 03:04:16'),
+(15, '201', 'MLUC student', '2024-02-29 03:45:30'),
+(16, '201', 'MLUC student', '2024-02-29 03:59:18'),
+(17, '201', 'MLUC student', '2024-02-29 06:04:35'),
+(18, NULL, 'Guest', '2024-03-02 08:14:51'),
+(19, NULL, 'Guest', '2024-03-02 15:09:53'),
+(20, NULL, 'Guest', '2024-03-03 03:55:09'),
+(21, '0', 'MLUC student', '2024-03-04 02:46:11'),
+(22, NULL, 'Guest', '2024-03-04 03:01:18'),
+(23, '201', 'MLUC student', '2024-03-07 03:10:09'),
+(24, '201', 'MLUC student', '2024-03-07 03:18:04');
 
 --
 -- Indexes for dumped tables
@@ -192,19 +210,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `compform`
 --
 ALTER TABLE `compform`
-  MODIFY `comp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `comp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `feedbacks`
 --
 ALTER TABLE `feedbacks`
-  MODIFY `feed_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `feed_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `visits`
 --
 ALTER TABLE `visits`
-  MODIFY `visit_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `visit_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

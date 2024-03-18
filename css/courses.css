@@ -146,10 +146,12 @@ section {
   letter-spacing: 2px;
   font-size: 0.8rem;
   font-family: "Open Sans", sans-serif;
+
 }
 
 .swiper-slide--one span {
   background: #2c6346;
+
 }
 
 .swiper-slide--two span {
@@ -182,8 +184,8 @@ section {
   font-weight: 400;
   font-size:3.3rem;
   line-height: 1.4;
-  margin-bottom: 10px;
-  padding: 25px 45px 0 25px;
+  margin-bottom: 5px;
+  margin-top:1px;
 }
 
 .swiper-slide p {
@@ -191,9 +193,9 @@ section {
   font-family: 'League Spartan', sans-serif;
   font-size: 20px;                                            
   font-weight: 300;
-  display: flex;
+
   align-items: center;
-  padding: 0 25px 35px 25px;
+
 }
 
 .swiper-slide svg {
@@ -261,61 +263,52 @@ courses-.container{
 }
 
 #coe-heading,
-#cas-heading{
- width:50px;
-}
+#cas-heading,
+#icje-heading,
 #com-heading,
-#cot-heading{
-  width:60px;
-}
+#cot-heading,
+#cit-heading,
 #ce-heading{
-  width:25px;
-}
-#cit-heading{
-  width:35px;
-}
-
-#icje-heading{
-  width:55px;
+ width:100px;
+ margin-top:10px;
+  margin-left:30px;
 }
 
 
-#coe-logo{
-  width: 87px; /* Adjust the width as needed */
-  height: 90px; /* Maintain aspect ratio */
-  margin-top:60px;
-  margin-right:100px;
+
+
+#coe-logo,
+#com-logo{
+  width: 240px; /* Adjust the width as needed */
+  height: 247px; /* Maintain aspect ratio */
+  margin-left:50px;
+  margin-bottom: -30px;
 }
 
 #cas-logo,
 #cit-logo{
-  width: 65px; /* Adjust the width as needed */
-  height: 65px; /* Maintain aspect ratio */
-  margin-top:60px;
-  margin-right:100px;
-}
-
-#com-logo{
-  width: 84px; /* Adjust the width as needed */
-  height: 84px; /* Maintain aspect ratio */
-  margin-top:60px;
-  margin-right:100px;
+  width: 180px; /* Adjust the width as needed */
+  height: 180px; /* Maintain aspect ratio */
+  margin-left:70px;
 }
 
 #ce-logo{
-  width: 76px; /* Adjust the width as needed */
-  height: 76px; /* Maintain aspect ratio */
-  margin-top:60px;
-  margin-right:100px;
-}
-#cot-logo,
-#icje-logo{
-  width: 70px; /* Adjust the width as needed */
-  height: 70px; /* Maintain aspect ratio */
-  margin-top:60px;
-  margin-right:100px;
+  width: 210px; /* Adjust the width as needed */
+  height: 210px; /* Maintain aspect ratio */
+  margin-left:50px;
+  margin-bottom: -10px;
 }
 
-.main-logo{
-  display: flex;
+#cot-logo,
+#icje-logo{
+  width: 180px; /* Adjust the width as needed */
+  height: 180px; /* Maintain aspect ratio */
+  margin-left:70px;
+  margin-bottom: -10px;
+}
+
+#coe-p{
+  width:500px;
+  margin-top:10px;
+   margin-left:30px;
 }
