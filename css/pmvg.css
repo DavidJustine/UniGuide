@@ -6,8 +6,12 @@
 
 #top-pmvg{
   color: #555;
-  text-align: center;
+	text-align: center;
 }
+#top-pmvg > h2 {
+	color: #2c6346;
+	margin-bottom: 32px;
+} 
 
 h1 {
   font-size: 2.2em;
@@ -62,8 +66,7 @@ h1 {
 .flip {
     position: relative;
     display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
     width: 300px;
     >.front,
     >.back {

@@ -19,26 +19,23 @@ if (isset($_GET['logout'])) {
 <head>
   <meta charset="UTF-8">
   <title>Colleges</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+	<link href="https://fonts.cdnfonts.com/css/cinzel" rel="stylesheet"/>
   <link rel="stylesheet" href="css/courses.css">
   <link rel="stylesheet" href="css/uniguide-home.css">
-
+	<link rel="stylesheet" href="css/responsive.css"/>
 </head>
 <body>
-  <?php include 'uniguide-navbar.php'; ?>
-
-
-<section>
-<div class="college-programs-title">
-<img src="images/logo.png" alt="Logo">
-  <h1>DMMMSU COLLEGE PROGRAMS</h1>
-</div>
-
+<?php include 'uniguide-navbar.php'; ?>
+<section class="colprog -with-mobile">
+	<div class="college-programs-title">
+		<img src="images/logo.png" alt="Logo">
+		<h1>DMMMSU COLLEGE PROGRAMS</h1>
+	</div>
   <div class="swiper">
     <div class="swiper-wrapper">
     <div class="swiper-slide swiper-slide--one" style="background-image: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url('images/coe_img.jpg'); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;">
-
         <div>
         <img id="coe-logo" src="images/img-2.png" alt="College Image">
           <h2 id="coe-heading">COE</h2>

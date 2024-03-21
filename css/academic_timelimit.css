@@ -1,12 +1,11 @@
 
 /*------------------------------------------academic-timelimit------------------------------------------*/
 table {
-    width: 1000px;
+    width: 100%;
     margin-top: 50px;
     font-size: 14px;
     border-collapse: collapse;
-    margin-left: 25%;
-    margin-bottom: 30px;
+    margin: 0 auto;
   }
   
   td,

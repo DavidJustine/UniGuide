@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
-*{
+/* *{
   box-sizing: border-box;
 }
 body{
@@ -12,18 +12,16 @@ body{
   justify-content: space-between;
 
   margin: 0;
-}
+} */
 
 a {
   margin-top: 40px;
 }
 
-
 .title_org {
   margin-top: 10%;
   display: flex;
   align-items: center;
-  margin-bottom: 0%; /* Adjust margin as needed */
 }
 
 #left {

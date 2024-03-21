@@ -1,7 +1,10 @@
 
 .card {
-    position: sticky;
+    /* @for simplicity feature removed
+		position: sticky;
     top: 45%;
+		*/
+		margin-bottom: 32px;
   }
   
   .card__inner {
@@ -12,7 +15,7 @@
     overflow: hidden;
     box-shadow: 0 25px 50px -12px hsla(0, 0%, 0%, 0.15);
     transform-origin: center top;
-    height: 280px;
+    min-height: 280px;
   }
   
   .cards {
@@ -89,3 +92,10 @@
 .spacio{
       margin-bottom: 50px;
   }
+.register-now {
+	display: block;
+  margin: 0 auto;
+  font-size: 32px;
+  text-align: center;
+	color: #fcb900;
+}

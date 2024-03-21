@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/*
 *,
 *::before,
 *::after {
@@ -38,9 +39,9 @@ body {
 
 .container-masthead .logo a {
   display: flex; 
-  align-items: center; /* Align items vertically */
-  text-decoration: none; /* Remove default underline from the link */
-  color: inherit; /* Inherit the color from the parent */
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 
 }
 
@@ -53,14 +54,14 @@ body {
   width: 180px;
 }
 .container-masthead .logo img {
-  margin-left: 15px; /* Add some space between the logos and the text */
+  margin-left: 15px;
   width: 150px;
 }
 
 
 #textlogo-inner-wrapper {
-  display: flex; /* Use flexbox to align items horizontally */
-  flex-direction: column; /* Arrange items vertically */
+  display: flex;
+  flex-direction: column;
   margin-top: 28px;
   margin-left: 15px;
   font-family: "Cinzel";
@@ -72,8 +73,8 @@ body {
 
 
 #agency-heading, #agency-name, #agency-tagline {
-  font-size: 16px; /* Set the font size to your desired value */
-  margin-bottom: 2px; /* Add some space between the text elements */
+  font-size: 16px;
+  margin-bottom: 2px;
 }
 #agency-heading{
   font-size: 13px;
@@ -88,10 +89,10 @@ body {
 }
 
 #agency-line {
-  height: 1.5px; /* Set the height of the line */
-  background-color: #2c6346; /* Set the color of the line */
-  width: 640px; /* Set the width of the line */
-  margin-bottom: 5px; /* Add some space between the line and the text */
+  height: 1.5px;
+  background-color: #2c6346;
+  width: 640px;
+  margin-bottom: 5px;
 }
 
 .navbar{
@@ -156,20 +157,21 @@ body {
 #qs-star{
   width:150px;
 }
+*/
 
 /*------------------------------------------------------------side_nav_bar----------------------------------*/
  /* New styles for the side navbar */
  .sidenavbar {
   position: fixed;
-  top: 17%;
+  top: 0;
   left: 0;
   height: 100%;
   width: 240px;
   background-color: #2c6346;
-  z-index: -6;
+  z-index: 11;
   display: flex;
   flex-direction: column;
-  overflow-y: auto; /* Add the overflow-y property to make the sidebar scrollable */
+  overflow-y: auto;
 }
 
 /* Customizing the scrollbar */
@@ -319,14 +321,14 @@ tbody tr:nth-child(even) {
   background-color: #fffcd7;
 }
 
-h2 {
+/*h2 {
   position: fixed;
   color: #2c6346;
   font-size: 24px;
   margin-bottom: 10px;
   margin-left: 10%;
   margin-top: 10%;
-}
+}*/
 #h2-rights {
   position: relative;
   color: #2c6346;
@@ -342,7 +344,7 @@ p {
   margin-left: 50px;
   color: #2c6346;
 }
-#p-srdr {
+/* #p-srdr {
   position: fixed;
   font-size: 18px;
   margin-bottom: 30px;
@@ -350,7 +352,7 @@ p {
   margin-left: 50px;
   color: #2c6346;
   margin-top: 12%;
-}
+} */
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 
@@ -561,20 +563,20 @@ article p {
     border-radius: 4px 4px 0 0;
   }
 }/*-------------------------------------------------------------------------------------------------------------------------*/
-.row {
+.row.flex {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  /*justify-content: center; 
   margin-left:7%;
-  width:900px;
+  width:900px;*/
   
   }
 
   .column-left {
-  flex: 2; 
+  flex: 3; 
   padding: 20px; 
   box-sizing: border-box; 
-  width:800px;
+  /* width:800px; */
   }
 
   .column-right {
@@ -611,6 +613,6 @@ article p {
 
 
   
-#exit{
+/*#exit{
   margin-left:55%;
-}
+}*/

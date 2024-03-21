@@ -1,5 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/*
 *,
 *::before,
 *::after {
@@ -39,9 +40,9 @@ body {
 
 .container-masthead .logo a {
   display: flex; 
-  align-items: center; /* Align items vertically */
-  text-decoration: none; /* Remove default underline from the link */
-  color: inherit; /* Inherit the color from the parent */
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 
 }
 
@@ -54,14 +55,14 @@ body {
   width: 180px;
 }
 .container-masthead .logo img {
-  margin-left: 15px; /* Add some space between the logos and the text */
+  margin-left: 15px;
   width: 150px;
 }
 
 
 #textlogo-inner-wrapper {
-  display: flex; /* Use flexbox to align items horizontally */
-  flex-direction: column; /* Arrange items vertically */
+  display: flex;
+  flex-direction: column;
   margin-top: 28px;
   margin-left: 15px;
   font-family: "Cinzel";
@@ -73,8 +74,8 @@ body {
 
 
 #agency-heading, #agency-name, #agency-tagline {
-  font-size: 16px; /* Set the font size to your desired value */
-  margin-bottom: 2px; /* Add some space between the text elements */
+  font-size: 16px;
+  margin-bottom: 2px;
 }
 #agency-heading{
   font-size: 13px;
@@ -89,10 +90,10 @@ body {
 }
 
 #agency-line {
-  height: 1.5px; /* Set the height of the line */
-  background-color: #2c6346; /* Set the color of the line */
-  width: 640px; /* Set the width of the line */
-  margin-bottom: 5px; /* Add some space between the line and the text */
+  height: 1.5px;
+  background-color: #2c6346;
+  width: 640px;
+  margin-bottom: 5px;
 }
 
 .navbar{
@@ -176,19 +177,18 @@ body {
         display: none;
     }
     
-}
-  
- /*--------------------------------------------side-nav-bar-----------------------------------------------------------------------*/
+}*/
+/*--------------------------------------------side-nav-bar-----------------------------------------------------------------------*/
 
   /* New styles for the side navbar */
   .sidenavbar {
     position: fixed;
-    top: 21.5%;
+    top: 0;
     left: 0;
     height: 100%;
     width: 235px;
     background-color: #2c6346;
-    z-index: -6;
+    z-index: 11;
     display: flex;
     flex-direction: column;
     overflow-y: auto; /* Add the overflow-y property to make the sidebar scrollable */
@@ -546,32 +546,32 @@ body {
   }
 
   .blog-slider {
-  width: 95%;
-  position: relative;
-  max-width: 800px;
-  background: #fbffe8;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 25px;
-  border-radius: 25px;
-  height: 200px;
-  transition: all 0.3s;
-  margin-top:1%;
-  margin-left: 32%;
+		width: auto;
+		position: relative;
+		max-width: 800px;
+		background: #fbffe8;
+		box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+		padding: 25px;
+		border-radius: 25px;
+		height: 200px;
+		transition: all 0.3s;
+		margin: 0 auto;
   }
 
   @media screen and (max-width: 992px) {
-  .blog-slider {
-    max-width: 680px;
-    height: 400px;
+		.blog-slider {
+			max-width: 680px;
+			height: 400px;
+		}
   }
-  }
+	/*
   @media screen and (max-width: 768px) {
-  .blog-slider {
-    min-height: 500px;
-    height: auto;
-    margin: 180px auto;
-  }
-  }
+		.blog-slider {
+			min-height: 500px;
+			height: auto;
+			margin: 180px auto;
+		}
+  }*/
   @media screen and (max-height: 500px) and (min-width: 992px) {
   .blog-slider {
     height: 350px;
@@ -686,22 +686,23 @@ body {
   }
   }
   @media screen and (max-height: 500px) and (min-width: 992px) {
-  .blog-slider__img {
-    height: 270px;
-  }
+		.blog-slider__img {
+			height: 270px;
+		}
   }
   .blog-slider__content {
-  padding-right: 25px;
+  padding-right: 0;
   margin-bottom: 10px;
 
   }
+	/**
   @media screen and (max-width: 768px) {
-  .blog-slider__content {
-    margin-top: -80px;
-    text-align: center;
-    padding: 0 30px;
-  }
-  }
+		.blog-slider__content {
+			margin-top: -80px;
+			text-align: center;
+			padding: 0 30px;
+		}
+  }*/
   @media screen and (max-width: 576px) {
   .blog-slider__content {
     padding: 0;
@@ -711,9 +712,11 @@ body {
   opacity: 0;
   transform: translateY(25px);
   transition: all 0.4s;
+	/*
   width: 650px;
   margin-left: 40px;
   margin-top: 50px;
+	*/
   }
   .blog-slider__code {
   color: #7b7992;
@@ -753,36 +756,29 @@ body {
   }
   }
   .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
-  bottom: 10px;
-  left: 0;
-  width: 100%;
+		bottom: 10px;
+		left: 0;
+		width: 100%;
   }
 
   .blog-slider__pagination {
-  position: absolute;
-  z-index: 21;
-  right: 20px;
-  width: 11px !important;
-  text-align: center;
-  left: auto !important;
-  top: 10%;
-  bottom: 17% !important;
-  transform: translateY(-1%);
-  z-index: 4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
   }
 
-
+	/**
   @media screen and (max-width: 768px) {
-  .blog-slider__pagination {
-    transform: translateX(-50%);
-    left: 50% !important;
-    top: 205px;
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  }
+		.blog-slider__pagination {
+			transform: translateX(-50%);
+			left: 50% !important;
+			top: 205px;
+			width: 100% !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+  }*/
   .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 8px 0;
   }
@@ -801,20 +797,20 @@ body {
   transition: all 0.3s;
   }
   .blog-slider__pagination .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #1df46f;
-  height: 30px;
-  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+		opacity: 1;
+		background: #1df46f;
+		box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
   }
+	/**
   @media screen and (max-width: 768px) {
-  .blog-slider__pagination .swiper-pagination-bullet-active {
-    height: 11px;
-    width: 30px;
-  }
-  }
+		.blog-slider__pagination .swiper-pagination-bullet-active {
+			height: 11px;
+			width: 30px;
+		}
+  }*/
 /*-----------------------------------------------------------------------------------------------*/
 .perso-table {
-  margin-left: 42%;
+  margin: 0 auto;
 }
 
 table {
@@ -852,10 +848,7 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
   background-color: #fffcd7;
 }
-
-
-
-
+/**
 #exit{
   margin-left:55%;
-}
+}*/

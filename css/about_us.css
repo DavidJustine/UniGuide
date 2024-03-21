@@ -18,7 +18,7 @@
 }
 
 
- h1{
+.top-part h1{
   text-align: center;
   margin-top: 5%;
   color:#2c6346;
@@ -133,7 +133,7 @@ ul {
   list-style: none;
   padding: 0;
 }
-li {
+.faq-section li {
   margin-bottom: 8px; /* Adjust spacing */
   color: #1f1f1f; /* Bullet text color */
   display: flex;
@@ -247,9 +247,10 @@ li i {
   color:#2c6346;
   font-size: 25px;
 }
-.container {
+.container.hymnc {
   display: flex;
   align-items: stretch;
+	margin-bottom: 32px;
 }
 
 .video {
@@ -391,10 +392,6 @@ li i {
   height:270px;
   margin-bottom: 20px;
   flex: 1; 
-}
-
-#exit{
-  margin-left:55%;
 }
 
 .comp{

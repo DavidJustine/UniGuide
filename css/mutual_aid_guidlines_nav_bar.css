@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/*
 *,
 *::before,
 *::after {
@@ -37,9 +38,9 @@ body {
 
 .container-masthead .logo a {
   display: flex; 
-  align-items: center; /* Align items vertically */
-  text-decoration: none; /* Remove default underline from the link */
-  color: inherit; /* Inherit the color from the parent */
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 
 }
 
@@ -52,14 +53,14 @@ body {
   width: 180px;
 }
 .container-masthead .logo img {
-  margin-left: 15px; /* Add some space between the logos and the text */
+  margin-left: 15px;
   width: 150px;
 }
 
 
 #textlogo-inner-wrapper {
-  display: flex; /* Use flexbox to align items horizontally */
-  flex-direction: column; /* Arrange items vertically */
+  display: flex;
+  flex-direction: column;
   margin-top: 28px;
   margin-left: 15px;
   font-family: "Cinzel";
@@ -71,8 +72,8 @@ body {
 
 
 #agency-heading, #agency-name, #agency-tagline {
-  font-size: 16px; /* Set the font size to your desired value */
-  margin-bottom: 2px; /* Add some space between the text elements */
+  font-size: 16px;
+  margin-bottom: 2px;
 }
 #agency-heading{
   font-size: 13px;
@@ -87,10 +88,10 @@ body {
 }
 
 #agency-line {
-  height: 1.5px; /* Set the height of the line */
-  background-color: #2c6346; /* Set the color of the line */
-  width: 640px; /* Set the width of the line */
-  margin-bottom: 5px; /* Add some space between the line and the text */
+  height: 1.5px;
+  background-color: #2c6346;
+  width: 640px;
+  margin-bottom: 5px;
 }
 
 .navbar{
@@ -154,17 +155,17 @@ body {
 
 #qs-star{
   width:150px;
-}
+}*/
 /*------------------------------------------------------------side_nav_bar----------------------------------*/
 /* New styles for the side navbar */
 .sidenavbar {
   position: fixed;
-  top: 21.5%;
+  top: 0;
   left: 0;
   height: 100%;
   width: 240px;
   background-color: #2c6346;
-  z-index: -6;
+  z-index: 11;
   display: flex;
   flex-direction: column;
   overflow-y: auto; /* Add the overflow-y property to make the sidebar scrollable */
@@ -556,14 +557,14 @@ margin-top: 10px;
   margin-bottom: 10px;
 }
 .section_p{
-width:900px;
-margin-left: 30%;
+/* width:900px; */
+/* margin-left: 30%; */
 }
 
 .section_2p{
 justify-content:center;
 text-align:justify;
-width:600px;
+/* width:600px; */
 margin-left: 0;
 }
 
@@ -578,22 +579,22 @@ text-indent:60px;
 
 .letter_p{
 justify-content:center;
-margin-left:25%; 
+/* margin-left:25%;  */
 margin-bottom:10px;
-width:800px;
+/* width:800px; */
 }
 
 .flex_p{
 justify-content:center; 
 margin-bottom:15px;
-width:300px;
+/* width:300px; */
 
 }
 
 .flex_p{
 justify-content:center; 
 margin-bottom:15px;
-width:300px;
+/* width:300px; */
 margin-left:15px;
 }
 
@@ -632,18 +633,18 @@ font-weight: bold;
 display: flex;
 justify-content: space-between;
 width: 400px;
-margin-left: 25%;
+/* margin-left: 25%; */
 }
 
 .column {
 flex: 1;
-margin-left: 25%;
+margin-right: 32px;
 }
 
 .column2 {
   flex: 1;
-  margin-left: 15%;
-  }
+  /* margin-left: 15%; */
+}
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -651,10 +652,10 @@ table {
   align-items: center;
   border-color: #0eab38;
   border-radius: 5px;
-  margin-bottom:50px;
+  /* margin-bottom:50px; */
   background-color: white;
   border-style: double;
-  margin-left: 30%;
+  /* margin-left: 30%; */
   width: 900px;
 }
 
@@ -662,7 +663,7 @@ table {
   align-items: center;
   border-color: #0eab38;
   border-radius: 5px;
-  margin-bottom:50px;
+  /* margin-bottom:50px; */
   background-color: white;
   border-style: double;
   margin-left: 0;
@@ -675,6 +676,6 @@ h4 {
 }
 
 
-#exit{
+/* #exit{
   margin-left:55%;
-}
+} */

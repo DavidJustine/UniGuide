@@ -18,55 +18,51 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
     <title>UNIGUIDE| Registration</title>
-    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/adam-2" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/sansserifflf" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/uniguide-home.css">
-    <link rel="stylesheet" href="css/academic_policy_nav_bar.css">
+    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet"/>
+    <link href="https://fonts.cdnfonts.com/css/adam-2" rel="stylesheet"/>
+    <link href="https://fonts.cdnfonts.com/css/sansserifflf" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/uniguide-home.css"/>
+    <link rel="stylesheet" href="css/academic_policy_nav_bar.css"/>
+		<link rel="stylesheet" href="css/responsive.css"/>
+    <link href="https://fonts.cdnfonts.com/css/cinzel" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <header class="container-masthead">
-    <div class="row"><div class="large-9  columns">
-            <h1 class="logo">
-                <a href="https://www.dmmmsu.edu.ph/" title="Don Mariano Marcos Memorial State University" rel="home">
-                <div id="textlogo-wrapper">
-                    <div id="textlogo-image">
-                        <img alt="Don Mariano Marcos Memorial State University Official Logo" src="https://www.dmmmsu.edu.ph/wp-content/uploads/2023/07/baong-piipinas-with-dmsu-trans-1.png" ></div>
-                    </div>
-                </div>
-                </a>
-            </h1>
-        <div id="textlogo-inner-wrapper">
-                <div id="agency-heading">Republic of the Philippines</div>
-                <div id="agency-line"></div>
-                <div id="agency-name">Don Mariano Marcos Memorial State University</div>
-                <div id="agency-tagline">La Union, Philippines | dmmmsu@dmmmsu.edu.ph</div>
-        </div>
-    </div>
-    <nav class="navbar">
-            <ul>
-                <li><a href="uniguide-home.php">Home</a></li>
-                <li><a href="about_us.php">About Us</a></li>
-                <li><a href="courses.php">Colleges</a></li>
-                <li><a href="games/gameoptions.php">Games</a></li>
-                <li><a href="contact_us.php">Contact Us</a></li>
-            <li id=exit><a href="?logout=true">Log Out</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="sidenavbar">
-	<div class="space"> </div>
+<header class="container-masthead">
+	<div class="row">
+			<h1 class="logo">
+				<a href="https://www.dmmmsu.edu.ph/" title="Don Mariano Marcos Memorial State University" rel="home">
+					<img alt="Don Mariano Marcos Memorial State University Official Logo" src="https://www.dmmmsu.edu.ph/wp-content/uploads/2023/07/baong-piipinas-with-dmsu-trans-1.png"/>
+				</a>
+			</h1>
+			<div id="textlogo-inner-wrapper">
+				<div id="agency-heading">Republic of the Philippines</div>
+				<div id="agency-line"></div>
+				<div id="agency-name">Don Mariano Marcos Memorial State University</div>
+				<div id="agency-tagline">La Union, Philippines | dmmmsu@dmmmsu.edu.ph</div>
+			</div>
+	</div>
+	<nav class="navbar">
+		<ul>
+			<li><a href="uniguide-home.php">Home</a></li>
+			<li><a href="about_us.php">About Us</a></li>
+			<li><a href="courses.php">Colleges</a></li>
+			<li><a href="games/gameoptions.php">Games</a></li>
+			<li><a href="contact_us.php">Contact Us</a></li>
+			<li id=exit><a href="?logout=true">Log Out</a></li>
+		</ul>
+	</nav>
+	<button class="trg-sidenav" onclick="javascript:document.getElementById('sidenavbar').style.display='block';"><i class="fa fa-bars"></i></button>
+</header>    
+<div class="sidenavbar" id="sidenavbar" style="display:none;">
+	<button class="trg-hideside" onclick="javascript:document.getElementById('sidenavbar').style.display='none';"><i class="fa fa-chevron-down"></i></button>
     <div class="sidebar-item">
         <a href="academic-calendar.php">
             <img class="sidebar-item-img" src="icons/calendar.png" alt="Image 1">
@@ -211,158 +207,154 @@ if (isset($_GET['logout'])) {
             <div class="sidebar-item-text">Undergraduate Thesis</div>
         </a>
     </div>
-    
 </div>
+<div class="mainc -with-mobile">
+	<div class="label-on-top">
+		<h2 id="h2-regis">REGISTRATION</h2>
+	</div>
+	<div class="cards">
+		<div class="card" data-index="0">
+			<div class="card__inner">
+				<div class="card__image-container">
+					<img
+						class="card__image"
+						src="images/reg1.png"
+						alt=""
+					/>
+				</div>
+				<div class="card__content" id="card-con">
+					<h1 class="card__title">Sec. 1</h1>
+					<p class="card__description" id="p-card">
+					A student shall register (walk-in or online) within the scheduled
+					registration period as provided for in the approved University 
+					academic calendar. A fee shall be imposed on late registration.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card" data-index="0">
+			<div class="card__inner">
+				<div class="card__image-container">
+					<img
+						class="card__image"
+						src="images/reg2.png"
+						alt=""
+					/>
+				</div>
+				<div class="card__content" id="card-con">
+					<h1 class="card__title"> Sec. 2</h1>
+					<p class="card__description" id="p-card">
+					A student is considered officially enrolled upon payment of the 
+					 required fees duly validated by the Cashier's Office and 
+					 confirmation of the Registrar's Office.
+					</p>
+				</div>
+			</div>
+		</div>
 
-<div class="timeline">
-    <h2 id="h2-regis">REGISTRATION<br><br></h2>
-    <button onclick="window.location.href='https://docs.google.com/document/d/1kzkVwSYVCROcxXtXUxNeveQCYaP8RpmM/edit?usp=drivesdk&ouid=103300716428591954559&rtpof=true&sd=true&fbclid=IwAR0bNjVtZaqdUKsbt7MOIro5QKu4sE5GRHghEmnyOYnYnOazO0M9NT1Rm0w';" id="button-regis">
-        Register
-      </button>
+		<div class="card" data-index="0">
+			<div class="card__inner">
+				<div class="card__image-container">
+					<img
+						class="card__image"
+						src="images/reg3.png"
+						alt=""
+					/>
+				</div>
+				<div class="card__content" id="card-con">
+					<h1 class="card__title">Sec. 3</h1>
+					<p class="card__description" id="p-card">
+					Certificate of Grades from the previous semester of an old 
+					 student should be presented upon enrollment.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" data-index="0">
+			<div class="card__inner">
+				<div class="card__image-container">
+					<img
+						class="card__image"
+						src="images/reg4.png"
+						alt=""
+					/>
+				</div>
+				<div class="card__content" id="card-con">
+					<h1 class="card__title">Sec. 4</h1>
+					<p class="card__description" id="p-card">
+					Rules on prerequisites in a curriculum are observed and
+					 followed during enrollment.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" data-index="0">
+			<div class="card__inner">
+				<div class="card__image-container">
+					<img
+						class="card__image"
+						src="images/reg5.png"
+						alt=""
+					/>
+				</div>
+				<div class="card__content" id="card-con">
+					<h1 class="card__title">Sec. 5</h1>
+					<p class="card__description" id="p-card">
+					CAT Result for undergraduates is valid for two (2) years.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" data-index="0">
+			<div class="card__inner">
+				<div class="card__image-container">
+					<img
+						class="card__image"
+						src="images/reg6.png"
+						alt=""
+					/>
+				</div>
+				<div class="card__content" id="card-con">
+					<h1 class="card__title">Sec. 6</h1>
+					<p class="card__description" id="p-card">
+					Enrolment in the group paced learning scheme at the DMMMSU Open 
+					 University System (DOUS) is done as scheduled from Monday to
+					Saturday, while enrollment in the self-paced can be done anytime 
+					of the year at the DOUS Office. A student enrolled in the
+					individualized/self-paced scheme may finish a 3-9-unit course 
+					within 6 months or earlier depending on his own pace.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card" data-index="0">
+			<div class="card__inner">
+				<div class="card__image-container">
+					<img
+						class="card__image"
+						src="images/reg7.png"
+						alt=""
+					/>
+				</div>
+				<div class="card__content" id="card-con">
+					<h1 class="card__title">Sec. 7</h1>
+					<p class="card__description" id="p-card">
+					Admission in the Expanded Tertiary Education Equivalency and
+					Accreditation Program (ETEEAP) may be done any time of the year
+					at the Office of the Dean/Director of the College/Institute concerned.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="register-now" href="https://docs.google.com/document/d/1kzkVwSYVCROcxXtXUxNeveQCYaP8RpmM/edit?usp=drivesdk&ouid=103300716428591954559&rtpof=true&sd=true&fbclid=IwAR0bNjVtZaqdUKsbt7MOIro5QKu4sE5GRHghEmnyOYnYnOazO0M9NT1Rm0w" id="button-regis">Register Now</a>
 </div>
-
-<div class="cards">
-  <div class="card" data-index="0">
-    <div class="card__inner">
-      <div class="card__image-container">
-        <img
-          class="card__image"
-          src="images/reg1.png"
-          alt=""
-        />
-      </div>
-      <div class="card__content" id="card-con">
-        <h1 class="card__title">Sec. 1</h1>
-        <p class="card__description" id="p-card">
-        A student shall register (walk-in or online) within the scheduled
-         registration period as provided for in the approved University 
-         academic calendar. A fee shall be imposed on late registration.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card" data-index="0">
-    <div class="card__inner">
-      <div class="card__image-container">
-        <img
-          class="card__image"
-          src="images/reg2.png"
-          alt=""
-        />
-      </div>
-      <div class="card__content" id="card-con">
-        <h1 class="card__title"> Sec. 2</h1>
-        <p class="card__description" id="p-card">
-        A student is considered officially enrolled upon payment of the 
-         required fees duly validated by the Cashier's Office and 
-         confirmation of the Registrar's Office.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card" data-index="0">
-    <div class="card__inner">
-      <div class="card__image-container">
-        <img
-          class="card__image"
-          src="images/reg3.png"
-          alt=""
-        />
-      </div>
-      <div class="card__content" id="card-con">
-        <h1 class="card__title">Sec. 3</h1>
-        <p class="card__description" id="p-card">
-        Certificate of Grades from the previous semester of an old 
-         student should be presented upon enrollment.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card" data-index="0">
-    <div class="card__inner">
-      <div class="card__image-container">
-        <img
-          class="card__image"
-          src="images/reg4.png"
-          alt=""
-        />
-      </div>
-      <div class="card__content" id="card-con">
-        <h1 class="card__title">Sec. 4</h1>
-        <p class="card__description" id="p-card">
-        Rules on prerequisites in a curriculum are observed and
-         followed during enrollment.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card" data-index="0">
-    <div class="card__inner">
-      <div class="card__image-container">
-        <img
-          class="card__image"
-          src="images/reg5.png"
-          alt=""
-        />
-      </div>
-      <div class="card__content" id="card-con">
-        <h1 class="card__title">Sec. 5</h1>
-        <p class="card__description" id="p-card">
-        CAT Result for undergraduates is valid for two (2) years.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card" data-index="0">
-    <div class="card__inner">
-      <div class="card__image-container">
-        <img
-          class="card__image"
-          src="images/reg6.png"
-          alt=""
-        />
-      </div>
-      <div class="card__content" id="card-con">
-        <h1 class="card__title">Sec. 6</h1>
-        <p class="card__description" id="p-card">
-        Enrolment in the group paced learning scheme at the DMMMSU Open 
-         University System (DOUS) is done as scheduled from Monday to
-        Saturday, while enrollment in the self-paced can be done anytime 
-        of the year at the DOUS Office. A student enrolled in the
-        individualized/self-paced scheme may finish a 3-9-unit course 
-        within 6 months or earlier depending on his own pace.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card" data-index="0">
-    <div class="card__inner">
-      <div class="card__image-container">
-        <img
-          class="card__image"
-          src="images/reg7.png"
-          alt=""
-        />
-      </div>
-      <div class="card__content" id="card-con">
-        <h1 class="card__title">Sec. 7</h1>
-        <p class="card__description" id="p-card">
-        Admission in the Expanded Tertiary Education Equivalency and
-        Accreditation Program (ETEEAP) may be done any time of the year
-        at the Office of the Dean/Director of the College/Institute concerned.
-        </p>
-      </div>
-    </div>
-  </div>
-
-<div class="spacio"></div>
-
+<!--for simplicity feature was removed
+<div class="spacio">&nbsp;</div>
 <script src="registration.js"></script>
+-->
 </body>
 </html>

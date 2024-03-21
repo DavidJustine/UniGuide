@@ -52,7 +52,7 @@
     margin: 0 auto;
     padding: 30px;
 }
-
+/** @deprecated???
 @media (min-width: 550px) {
   .navbar {
       all: unset;
@@ -70,8 +70,7 @@
   .menu-bar {
       display: none;
   }
-  
-}
+}*/
 /*----------------------------------------------------------------------------------------------------*/
 .college-programs-title {
   text-align: center;

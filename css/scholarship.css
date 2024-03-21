@@ -1,168 +1,163 @@
+/**
 body {
-    height: 0;
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #0a0a0a;
-    background: #f6f6f6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+	height: 0;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #0a0a0a;
+	background: #f6f6f6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
   
-  .container-masthead {
-    background-color: #fcb900;
-      top: 0;
-      margin: 0;
-      width: 100%;
-      z-index: 6;
-      height: 226px;
-  
-  }
-  
-  .container-masthead .logo a {
-    display: flex; 
-    align-items: center; /* Align items vertically */
-    text-decoration: none; /* Remove default underline from the link */
-    color: inherit; /* Inherit the color from the parent */
-  
-  }
-  
-  .row{
-    display: flex;
-    margin-left: 8%;
-  }
-  
-  .large-9  columns{
-    width: 180px;
-  }
-  .container-masthead .logo img {
-    margin-left: 15px; /* Add some space between the logos and the text */
-    width: 150px;
-  }
-  
-  
-  #textlogo-inner-wrapper {
-    display: flex; /* Use flexbox to align items horizontally */
-    flex-direction: column; /* Arrange items vertically */
-    margin-top: 28px;
-    margin-left: 15px;
-    font-family: "Cinzel";
-    font-weight: bold;
-    color:#2c6346;
-    text-transform: uppercase;
-  
-  }
-  
-  
-  #agency-heading, #agency-name, #agency-tagline {
-    font-size: 16px; /* Set the font size to your desired value */
-    margin-bottom: 2px; /* Add some space between the text elements */
-  }
-  #agency-heading{
-    font-size: 13px;
-  }
-  
-  #agency-name{
-    font-size: 22px;
-  }
-  
-  #agency-tagline{
-    font-size: 13px;
-  }
-  
-  #agency-line {
-    height: 1.5px; /* Set the height of the line */
-    background-color: #2c6346; /* Set the color of the line */
-    width: 640px; /* Set the width of the line */
-    margin-bottom: 5px; /* Add some space between the line and the text */
-  }
-  
-  .navbar{
-    background-color: #2c6346;
-    padding: 7px 0;
-    text-decoration: none;
-    margin-bottom: 20px;
-  }
-  
-  .navbar ul{
-    margin-left:8%;
-    display: flex;
-    gap:47px;
-    
-  }
-  
-  .navbar ul a {
-    all: unset;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 15px;
-    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    
-  }
-  .navbar ul a:hover {
-    color: #dbffe4;
-  }
-  
-  .navbar li{
-    list-style-type: none;
-  }
-  
-  .space{
-    margin-top: 20px;
-  }
-  
-  .home-banner{
-    margin: auto;
-  }
-  
-  .home-banner img{
-    width: 1519px;
-  }
-  
-  .footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  
-  .footer img{
-    width:100px;
-    margin-right: 6%;
-  }
-  
-  #wuri{
-    width:200px;
-  }
-  
-  #qs-star{
-    width:150px;
-  }
+.container-masthead {
+	background-color: #fcb900;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 6;
+	height: 226px;
+}
+
+.container-masthead .logo a {
+	display: flex; 
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+
+}
+
+.row{
+	display: flex;
+	margin-left: 8%;
+}
+
+.large-9  columns{
+	width: 180px;
+}
+.container-masthead .logo img {
+	margin-left: 15px;
+	width: 150px;
+}
+
+#textlogo-inner-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-top: 28px;
+	margin-left: 15px;
+	font-family: "Cinzel";
+	font-weight: bold;
+	color:#2c6346;
+	text-transform: uppercase;
+
+}
+
+#agency-heading, #agency-name, #agency-tagline {
+	font-size: 16px;
+	margin-bottom: 2px;
+}
+#agency-heading{
+	font-size: 13px;
+}
+
+#agency-name{
+	font-size: 22px;
+}
+
+#agency-tagline{
+	font-size: 13px;
+}
+
+#agency-line {
+	height: 1.5px;
+	background-color: #2c6346;
+	width: 640px;
+	margin-bottom: 5px;
+}
+
+.navbar{
+	background-color: #2c6346;
+	padding: 7px 0;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+.navbar ul{
+	margin-left:8%;
+	display: flex;
+	gap:47px;
+	
+}
+
+.navbar ul a {
+	all: unset;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+	
+}
+.navbar ul a:hover {
+	color: #dbffe4;
+}
+
+.navbar li{
+	list-style-type: none;
+}
+
+.space{
+	margin-top: 20px;
+}
+
+.home-banner{
+	margin: auto;
+}
+
+.home-banner img{
+	width: 1519px;
+}
+
+.footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.footer img{
+	width:100px;
+	margin-right: 6%;
+}
+
+#wuri{
+	width:200px;
+}
+
+#qs-star{
+	width:150px;
+}**/
+
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 .section-container {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: center;
-    margin-top: 1%;
+    /*margin-top: 1%;*/
 }
 .main-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; 
-    z-index: 1;
+    /*position: relative; 
+    z-index: 1;*/
+		margin-bottom: 16px;
 }
 
 .second-section{
-    position: absolute;
-    top: 150%;
-    /* Your existing styles for second-section */
-    /* Adjust background color, padding, etc. as needed */
-    color: white; /* Example text color for overlay */
-    padding: 20px; /* Example padding for overlay content */
+    width: 100%;
 }
 .enroll-content {
     display: flex;
@@ -170,9 +165,9 @@ body {
    
 }
 
-.enroll-info {
+.enroll-info, .enroll-img {
     flex: 1;
-    width: 500px;
+    /*width: 500px;*/
 }
 
 .enroll-info .p1 img{
@@ -183,17 +178,19 @@ body {
 }
 
 .enroll-img img{
-    padding-left: 40px;
-    margin-top: 10px;
-    margin-left: 40px;
-    width: 680px;
-    height: 780px;
-    z-index: 2;
+    /*padding-left: 40px;*/
+    /*margin-top: 10px;
+    margin-left: 40px;*/
+    width: 80%;
+    /*height: 780px;*/
+    /*z-index: 2;*/
     -webkit-filter: drop-shadow(20px 10px 16px #666666);
     filter: drop-shadow(20px 10px 16px #666666);
     mix-blend-mode: multiply;
     animation: floating 3s ease-in-out infinite;
-    transform-origin: center center; 
+    transform-origin: center center;
+		display: block;
+		margin: 0 auto;
 }
 @keyframes floating {
     0%, 100% {
@@ -208,10 +205,10 @@ h1 {
     margin: 0;
 }
 
-main {
+/*main {
     padding: 20px;
     margin-left: 50px;
-}
+}*/
 
 
 h2 {
@@ -235,10 +232,9 @@ p {
 
 span{
     font-size: 12px;
-    margin-left: 10px;
     margin-bottom: 50px;
 }
-button {
+.mainc button#scholarButton {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #2e9c34;
@@ -246,8 +242,8 @@ button {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    margin-bottom: 4px;
-    margin-left:22px;
+    margin: 0;
+		width: auto;
 }
 
 button:hover {
@@ -258,12 +254,12 @@ button:hover {
     display: flex;
     background-color: #2e9c34;
     border-radius: 10px;
-    padding-top: 5px;
+    padding: 16px 32px;
 }
 
-.inquiries-container p{
+.inquiries-container p {
     color: #fff;
-    width: 595px;
+    width: auto;
     font-size: 16.5px;
 }
 
@@ -281,8 +277,7 @@ button:hover {
 
 .socmed{
     display: flex;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 0;
     background-color: #949596;
     border-radius: 5px;
     width: 30px;
@@ -297,8 +292,7 @@ button:hover {
 
 .socmed2{
     display: flex;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 0;
     background-color: #1f80c0;
     border-radius: 5px;
     width: 70px;
@@ -307,13 +301,13 @@ button:hover {
     padding: 2px;
 }
 
-.fb-container{
-    margin-left: 12px;
-    margin-right: 6px;
+.fb-container, .mess-container {
+		margin: 4px 6px 0 12px;
 }
-.mess-container{
+/*
+.mess-container {
     margin-left: 6px;
-}
+}*/
 
 .socmed-divider {
     width: 2px;

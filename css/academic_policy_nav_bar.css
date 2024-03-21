@@ -23,26 +23,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-
+/**
 .container-masthead {
-  background-color: #fcb900;
   position: fixed;
-    top: 0;
-    margin: 0;
-    width: 100%;
-    z-index: 6;
-    height: 226px;
-
-}
-
+	top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 6;
+}*/
 .container-masthead .logo a {
   display: flex; 
   align-items: center; /* Align items vertically */
   text-decoration: none; /* Remove default underline from the link */
   color: inherit; /* Inherit the color from the parent */
-
 }
 
 .row{
@@ -54,7 +47,6 @@ body {
   width: 180px;
 }
 .container-masthead .logo img {
-  margin-left: 15px; /* Add some space between the logos and the text */
   width: 150px;
 }
 
@@ -94,20 +86,19 @@ body {
   width: 640px; /* Set the width of the line */
   margin-bottom: 5px; /* Add some space between the line and the text */
 }
-
+/** @deprecated
 .navbar{
   background-color: #2c6346;
   padding: 7px 0;
   text-decoration: none;
-  margin-bottom: 20px;
+	margin-bottom: 0 !important;
 }
 
 .navbar ul{
   margin-left:8%;
   display: flex;
   gap:47px;
-  
-}
+}*/
 
 .navbar ul a {
   all: unset;
@@ -163,12 +154,12 @@ body {
 /* New styles for the side navbar */
 .sidenavbar {
   position: fixed;
-  top: 21.5%;
+  top: 0;
   left: 0;
   height: 100%;
   width: 240px;
   background-color: #2c6346;
-  z-index: -6;
+  z-index: 11;
   display: flex;
   flex-direction: column;
   overflow-y: auto; /* Add the overflow-y property to make the sidebar scrollable */
@@ -293,375 +284,380 @@ body {
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 
 .timeline h2 {
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 120px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 15%;
-  }
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	/*margin-top: 120px;
+	margin-bottom: 30px;*/
+	text-align: center;
+	/*margin-right: 300px;
+	margin-left: 15%;*/
+	margin-left: 0;
+	text-transform: uppercase;
+}
+.timeline h2.main-title {
+	text-transform: uppercase;
+	margin-top: 32px;
+}
 
-  .timeline #h2-regis {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 24%;
-  }
+.timeline.fixed {
+	position: fixed;
+	top: 200px;
+	padding: 0;
+}
+.timeline.fixed #h2-regis {
+	margin: 0;
+}
+.timeline #h2-regis {
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	text-align: center;
+}
 
-  .timeline #h2-cross, 
-  .timeline #h2-shift,
-  .timeline #h2-atten,
-  .timeline #h2-leave,
-  .timeline #h2-reten,
-  .timeline #h2-sub {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 18.5%;
-  }
-  
-
-  .timeline #h2-aclo {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 21%;
-  }
-
-  .timeline #h2-val {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 27%;
-  }
-
-  .timeline #h2-with {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 200px;
-    margin-left: 11%;
-  }
-
-  .timeline #h2-withuni {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 200px;
-    margin-left: 9%;
-  }
+.timeline #h2-cross, 
+.timeline #h2-shift,
+.timeline #h2-atten,
+.timeline #h2-leave,
+.timeline #h2-reten,
+.timeline #h2-sub {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 300px;
+	margin-left: 18.5%;
+}
 
 
-  .timeline #h2-classreg {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 120px;
-    margin-left: 5%;
-  }
+.timeline #h2-aclo {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 300px;
+	margin-left: 21%;
+}
 
-  .timeline #h2-grad {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 100px;
-    margin-left: 5%;
-  }
+.timeline #h2-val {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 300px;
+	margin-left: 27%;
+}
 
-  .timeline #h2-pre, 
-  .timeline #h2-sub {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 14%;
-  } 
+.timeline #h2-with {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 200px;
+	margin-left: 11%;
+}
 
-  .timeline #h2-exam {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 200px;
-    margin-left: 17%;
-  } 
-
-  .timeline #h2-under {
-    position: fixed;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c6346;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 18%;
-  }
+.timeline #h2-withuni {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 200px;
+	margin-left: 9%;
+}
 
 
+.timeline #h2-classreg {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 120px;
+	margin-left: 5%;
+}
 
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-    margin-right: 90px;
-    margin-top: 150px;
-    margin-bottom:10px;
-    margin-left: 28%;
-  }
-  
-  .timeline button {
-    display: block;
-    background-color: #2C6346;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 15px 15px;
-    border: none;
-    border-radius: 10px;
-    margin-right: 500px;
-    margin-bottom: 20px;
-    width:100px;
-  }
+.timeline #h2-grad {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 100px;
+	margin-left: 5%;
+}
 
-  .timeline #button-regis {
-    position: fixed;
-    display: block;
-    background-color: #2c6346;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 15px 15px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 7%;
-    width:100px;
-  }
-  
-  .back-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #2c6346;
-    font-family: 'Futura Md BT', sans-serif;
-    font-size: 17px;;
-  }
-  
-  .back-link i {
-    margin-right: 5px;
-    color: #2c6346;
-  }
-  
-  article {
-    padding: 4px;
-    font-family: 'Futura Md BT', sans-serif;
-    color: #2c6346;
-  }
-  
-  article h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px; /* Decrease the bottom margin */
-    margin-left:20px;
-    color: #2c6346;
-  }
-  article h4{
-    font-size: 1.3rem;
-    color: #2c6346;
-  }
-  
-  
-  article h5{
-  font-size: 1.2rem;
-  color: #2c6346;
-  }
-  article p {
-    font-size: 1.2rem;
-    line-height: 1;
-    margin-top: 5px; /* Decrease the top margin */
-    text-align:justify;
-    margin-left:35px;
-    color: #2c6346;
-  }
-  
-  
-  
-  .timeline button:hover {
-    background-color: #1bd64d;
-    cursor: pointer;
-  }
-  
-  
-  .timeline__event {
-    background: #f9fff0;
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    border-radius: 8px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-      0 18px 36px -18px rgba(0, 0, 0, 0.3),
-      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  }
-  
-  .timeline__event__title {
-    font-family: 'Futura Md BT', sans-serif;
-    font-weight: 900;
-    font-size: 1.2rem;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #2C6346;
-    letter-spacing: 1.5px;
-  }
-  
-  .timeline__event__content {
-    padding: 10px;
-  }
-  
-  .timeline__event__date {
-    font-family: 'Futura Md BT', sans-serif;
-    color: #ffffff;
-    font-size: 1.5rem;
-    white-space: nowrap;
-  }
-  
-  .timeline__event__icon {
-    border-radius: 8px 0 0 8px;
-    background: #2C6346;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 40%;
-    font-size: 2rem;
-    color: #2C6346;
-    padding: 20px;
-  }
-  
-  .timeline__event__icon i {
-    position: absolute;
-    top: 50%;
-    left: -76px;
-    font-size: 2.5rem;
-    transform: translateY(-50%);
-  }
-  
-  .timeline__event__description {
-    font-family: 'Futura Md BT', sans-serif;
-    flex-basis: 60%;
-    font-weight: 400;
-    font-size: large;
-    color: black;
-  }
-  
-  .timeline__event:after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #2C6346;
-    position: absolute;
-    top: 52%;
-    left: -3.5rem;
-    z-index: -1;
-  }
-  
-  .timeline__event:before {
-    content: "";
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    background: #ffffff;
-    border-radius: 100%;
-    left: -6rem;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 2px solid #2C6346;
-  }
-  
-  .timeline__event--type2:before {
-    background: #ffffff;
-    border-color: #f6f35c;
-  }
-  
-  .timeline__event--type2:after {
-    background: #f6f35c;
-  }
-  
-  .timeline__event--type2 .timeline__event__date {
-    color: #6f6d00;
-  }
-  
-  .timeline__event--type2 .timeline__event__icon {
-    background: #f6f35c;
-    color: #b1ae00;
-  }
-  
-  .timeline__event--type2 .timeline__event__title {
-    color: #b1ae00;
-  }
-  
-  
-  .timeline__event:last-child:after {
-    content: none;
-  }
-  
+.timeline #h2-pre, 
+.timeline #h2-sub {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 300px;
+	margin-left: 14%;
+} 
+
+.timeline #h2-exam {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 200px;
+	margin-left: 17%;
+} 
+
+.timeline #h2-under {
+	position: fixed;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #2c6346;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: 300px;
+	margin-left: 18%;
+}
 
 
 
+.timeline {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	padding-left: 100px;
+	margin: 0 32px;
+}
+
+
+.timeline button {
+	display: block;
+	background-color: #2C6346;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px 15px;
+	border: none;
+	border-radius: 10px;
+	margin-right: 500px;
+	margin-bottom: 20px;
+	width:100px;
+}
+
+.timeline #button-regis {
+	/*position: fixed;*/
+	display: block;
+	background-color: #2c6346;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px 15px;
+	border: none;
+	border-radius: 10px;
+	/*margin-top: 7%;*/
+	width:100px;
+}
+
+.back-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #2c6346;
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 17px;;
+}
+
+.back-link i {
+	margin-right: 5px;
+	color: #2c6346;
+}
+
+article {
+	padding: 4px;
+	font-family: 'Futura Md BT', sans-serif;
+	color: #2c6346;
+}
+
+article h3 {
+	font-size: 1.2rem;
+	margin-bottom: 5px; /* Decrease the bottom margin */
+	margin-left:20px;
+	color: #2c6346;
+}
+article h4{
+	font-size: 1.3rem;
+	color: #2c6346;
+}
+
+
+article h5{
+font-size: 1.2rem;
+color: #2c6346;
+}
+article p {
+	font-size: 1.2rem;
+	line-height: 1;
+	margin-top: 5px; /* Decrease the top margin */
+	text-align:justify;
+	margin-left:35px;
+	color: #2c6346;
+}
+
+
+
+.timeline button:hover {
+	background-color: #1bd64d;
+	cursor: pointer;
+}
+
+
+.timeline__event {
+	background: #f9fff0;
+	margin-bottom: 20px;
+	position: relative;
+	display: flex;
+	border-radius: 8px;
+	box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+		0 18px 36px -18px rgba(0, 0, 0, 0.3),
+		0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.timeline__event__title {
+	font-family: 'Futura Md BT', sans-serif;
+	font-weight: 900;
+	font-size: 1.2rem;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #2C6346;
+	letter-spacing: 1.5px;
+}
+
+.timeline__event__content {
+	padding: 10px;
+}
+
+.timeline__event__date {
+	font-family: 'Futura Md BT', sans-serif;
+	color: #ffffff;
+	font-size: 1.5rem;
+	white-space: nowrap;
+}
+
+.timeline__event__icon {
+	border-radius: 8px 0 0 8px;
+	background: #2C6346;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 40%;
+	font-size: 2rem;
+	color: #2C6346;
+	padding: 20px;
+}
+
+.timeline__event__icon i {
+	position: absolute;
+	top: 50%;
+	left: -76px;
+	font-size: 2.5rem;
+	transform: translateY(-50%);
+}
+
+.timeline__event__description {
+	font-family: 'Futura Md BT', sans-serif;
+	flex-basis: 60%;
+	font-weight: 400;
+	font-size: large;
+	color: black;
+}
+
+.timeline__event:after {
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: #2C6346;
+	position: absolute;
+	top: 52%;
+	left: -3.5rem;
+	z-index: -1;
+}
+
+.timeline__event:before {
+	content: "";
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+	background: #ffffff;
+	border-radius: 100%;
+	left: -6rem;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 2px solid #2C6346;
+}
+
+.timeline__event--type2:before {
+	background: #ffffff;
+	border-color: #f6f35c;
+}
+
+.timeline__event--type2:after {
+	background: #f6f35c;
+}
+
+.timeline__event--type2 .timeline__event__date {
+	color: #6f6d00;
+}
+
+.timeline__event--type2 .timeline__event__icon {
+	background: #f6f35c;
+	color: #b1ae00;
+}
+
+.timeline__event--type2 .timeline__event__title {
+	color: #b1ae00;
+}
+
+
+.timeline__event:last-child:after {
+	content: none;
+}
+  
 /*----------------------------------------------------acad-sched-conduct-table----------------------------------*/
 table {
     align-items: center;
@@ -710,11 +706,14 @@ h1 {
 .cards {
     width: 100%;
     max-width: 900px;
-    margin-left: 28%;
-    display: grid;
-    grid-template-rows: repeat(var(--cards-count), var(--card-height));
+    display: flex;
+		flex-direction: column;
+    /** @deprecated
+		grid-template-rows: repeat(var(--cards-count), var(--card-height));
     gap: 230px 0;
-    margin-top: 150px;
+		*/
+		gap: unset;
+    margin: 0 auto;
   }
   
   
@@ -749,8 +748,8 @@ h1 {
     font-size: 15px;
     color: #2c6346;
     text-align: justify;
-    width: 470px;
     margin: 0;
+		padding: 0 32px;
   }
   
   /*--------------------------------------admission-section------------------------------------*/
@@ -758,7 +757,7 @@ h1 {
   .admissionsection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin-left: 25%;
     max-width: 1500px;
     margin-top: -60px;
@@ -779,10 +778,10 @@ h1 {
 .sec:hover {
     transform: scale(1.05);
 }
-
+/** @deprecated
 .sec:nth-child(3n+1) {
     margin-left: 0;
-}
+}*/
 
 .sec img {
     width: 50%;
@@ -847,8 +846,7 @@ p {
   color: #2C6346;
   margin-right: 150px;
 }
-
-
+/** @deprecated
 #exit{
   margin-left:55%;
-}
+}*/
