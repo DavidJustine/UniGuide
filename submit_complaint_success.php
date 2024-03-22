@@ -1,5 +1,6 @@
 <?php
 session_start();
+header("Location: complaint_page.php");
 ?>
 
 <!DOCTYPE html>

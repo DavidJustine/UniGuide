@@ -20,7 +20,7 @@
 
 .top-part h1{
   text-align: center;
-  margin-top: 5%;
+  margin-bottom: 32px;
   color:#2c6346;
   font-size: 25px;
 }
@@ -112,7 +112,7 @@ button:hover {
 .row4 {
   display: flex;
   justify-content: space-between;
-  width: 99%;
+  width: 100%;
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -126,7 +126,7 @@ button:hover {
   margin: 0 10px;
   background-color: white;
   padding-top: 50px;
-  width: 150px; /* Adjust width as needed */
+  width: 195px; /* Adjust width as needed */
 }
 
 ul {
@@ -153,7 +153,7 @@ li i {
 
 .social-icons {
   list-style: none;
-  padding-top: 3px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column; /* Display items vertically */
   align-items: center; /* Center items horizontally */
@@ -232,6 +232,7 @@ li i {
   text-decoration: none; /* Remove underline */
   color: #2c6346; /* Set color to #46E068 */
   font-size: 15px;
+	text-decoration: underline;
 }
 
 .space{
@@ -314,7 +315,7 @@ li i {
 .form-container {
   border-radius: 10px;
   background-color: #fff;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .complaint-container label b {
@@ -343,6 +344,7 @@ li i {
 
 .complaint-container form textarea {
   height: 150px;
+	padding: 10px;
 }
 
 .complaint-container form #submit-button {
@@ -356,6 +358,7 @@ li i {
   height: 50px; /* Increase button height */
   font-size: 20px; /* Increase font size */
   padding: 10px 20px; /* Adjust padding for height and width */
+	margin-right: 0;
 }
 
 .complaint-container form #submit-button:hover {

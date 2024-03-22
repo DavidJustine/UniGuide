@@ -24,9 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Close the database connection
         $conn = null;
-
+				
+				if(session_start()) {
+					$_SESSION['success_msg_complaint'] = "Your complaint has been successfully submitted. We will get back to you soon.";
+				}
+				
         // Redirect to the success page
-        header("Location: submit_complaint_success.php");
+        header("Location: complaint_page.php");
         exit(); // Ensure that subsequent code is not executed after redirection
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();
