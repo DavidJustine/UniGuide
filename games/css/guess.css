@@ -9,7 +9,7 @@
 body{
   display: flex;
   padding: 0 10px;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
   justify-content: center;
   background: #1BB295;
@@ -122,6 +122,7 @@ body{
     display: inline-block;
     width: 100px;
     height: 100px;
+		z-index: 11;
   }
   
   .exit img{

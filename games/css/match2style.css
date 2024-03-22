@@ -111,14 +111,14 @@ body{
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 .card .front-view img{
-  max-width: 55px;
+  max-width: 100%;
 }
 .card .back-view{
   transform: rotateY(-180deg);
   background: #ffffff;
 }
 .card .back-view img{
-  max-width: 70px;
+  max-width: 100%;
   
 }
 .card.flip .front-view{
@@ -172,10 +172,10 @@ body{
     width: 350px;
   }
   .card .front-view img{
-    max-width: 16px;
+    /* max-width: 16px; */
   }
   .card .back-view img{
-    max-width: 40px;
+    /* max-width: 40px; */
   }
 }
 
@@ -185,7 +185,7 @@ body{
     width: 300px;
   }
   .card .back-view img{
-    max-width: 35px;
+    /* max-width: 35px; */
   }
   .details{
     margin-top: 10px;
@@ -213,6 +213,7 @@ body{
   display: inline-block;
   width: 100px;
   height: 100px;
+	z-index: 11;
 }
 
 .exit img{

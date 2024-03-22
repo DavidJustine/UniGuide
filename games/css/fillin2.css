@@ -14,15 +14,16 @@ body {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  top: 80%; 
+  top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
   width: 70%;
   max-width: 800px;
   z-index: 2;
-  overflow: hidden;
+  overflow-y: scroll;
   padding:20px;
   text-align: center;
+	height: 80vh;
 }
 
 .container-pmvgo{
@@ -36,9 +37,10 @@ body {
   width: 70%;
   max-width: 800px;
   z-index: 2;
-  overflow: hidden;
+  overflow-y: scroll;
   padding:20px;
   text-align: center;
+	height: 80vh;
 }
 
 h1 {
@@ -149,6 +151,7 @@ button {
     display: inline-block;
     width: 100px;
     height: 100px;
+		z-index: 11;
   }
 
 .exit img{
@@ -158,3 +161,9 @@ button {
 }
 
 /*-----------------------------------exit---------------------------------------------*/
+@media only screen and (max-width: 576px) {
+	#almamater-form, #university-form {
+		width: auto;
+	}
+	.exit { top: 12px; }
+}
