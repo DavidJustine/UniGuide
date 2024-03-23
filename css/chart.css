@@ -1,0 +1,89 @@
+/*CSS*/
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+    font-family: Helvetica;
+  }
+  #tree{
+    width:100%;
+    height:100%;
+  }
+     
+          [data-n-id] rect {
+              fill: #2C6346;
+          }
+          [data-n-id] circle {
+            stroke: #FCB900;
+        }
+  
+          [data-n-id='1'] rect {
+              fill: #FCB900;
+          }
+
+          [data-n-id='1'] circle {
+            stroke: #2C6346;
+        }
+  
+          .node.red rect {
+              fill: #2C6346;
+          }
+          
+          .field_0 {
+              font-family: Impact;
+              text-transform: uppercase;
+              fill: #cfcfcf;
+          }
+  
+          .field_1 {
+              fill: #cfcfcf;
+          }
+  
+          [data-l-id] path {
+              stroke: #2C6346;
+          }
+  
+          [data-l-id='[3][4]'] path {
+              stroke: #016e25;
+          }
+  
+          [data-ctrl-ec-id] circle {
+              fill: #2C6346 !important;
+          }
+  
+          [data-ctrl-ec-id='3'] circle {
+              fill: #016e25 !important;
+          }
+  
+          [data-ctrl-n-menu-id] circle {
+              fill: #ffffff;
+          }
+  
+          [data-ctrl-n-menu-id] rect:hover ~ circle {
+              fill: white;
+          }
+  
+    
+  
+          [data-id='search'] {
+            display: block !important;
+          }
+
+          #addNodeBtn {
+            position: absolute; /* Position the button absolutely */
+            bottom: 20px; /* Adjust bottom position as needed */
+            left: 20px; /* Adjust left position as needed */
+            background-color: transparent;
+            border: none;
+            font-size: 60px; /* Change the size as needed */
+            color: #FCB900; /* Change the color as needed */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            z-index: 1000; /* Set a high z-index to ensure the button appears above other elements */
+        }
+
+        /* Change color of button on hover */
+        #addNodeBtn:hover {
+            color: red; /* Change the hover color as needed */
+        }

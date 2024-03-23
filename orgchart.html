@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <reference path="OrgChart.d.ts">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/chart.css">
+    <script src="js/OrgChart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style id="myStyles">
+          [data-n-id] rect {
+              fill: #2C6346;
+          }
+          [data-n-id] circle {
+            stroke: #FCB900;
+        }
+  
+          [data-n-id='1'] rect {
+              fill: #FCB900;
+          }
+
+          [data-n-id='1'] circle {
+            stroke: #2C6346;
+        }
+  
+          .node.red rect {
+              fill: #2C6346;
+          }
+          
+          .field_0 {
+              font-family: Impact;
+              text-transform: uppercase;
+              fill: #cfcfcf;
+          }
+  
+          .field_1 {
+              fill: #cfcfcf;
+          }
+  
+          [data-l-id] path {
+              stroke: #2C6346;
+          }
+  
+          [data-l-id='[3][4]'] path {
+              stroke: #016e25;
+          }
+  
+          [data-ctrl-ec-id] circle {
+              fill: #2C6346 !important;
+          }
+  
+          [data-ctrl-ec-id='3'] circle {
+              fill: #016e25 !important;
+          }
+  
+          [data-ctrl-n-menu-id] circle {
+              fill: #ffffff;
+          }
+  
+          [data-ctrl-n-menu-id] rect:hover ~ circle {
+              fill: white;
+          }
+  
+    
+  
+          [data-id='search'] {
+            display: block !important;
+          }
+
+</style>
+<body>
+    <div style="width:100%; height:700px; position: relative;" id="tree"></div>
+    
+    <!-- Move button inside the body -->
+    <button id="addNodeBtn">
+        <i class="fas fa-plus-circle"></i>
+    </button>
+
+    <script src="js/database.js"></script>
+    <script src="js/org.js"></script>
+</body>
+</html>

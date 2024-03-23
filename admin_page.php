@@ -500,6 +500,8 @@ $visit_counts = array_values($visit_data);
         }
         ?>
     </div>
+
+    
 </div>
     
 <!-- JavaScript for search functionality -->
@@ -634,7 +636,10 @@ $visit_counts = array_values($visit_data);
         });
 
     </script>
-
+<div style="margin-top: 20px;">
+    <a href="orgchart.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 16px; background-color: #2C6346; color: #fff; border: none; border-radius: 5px; text-decoration: none; float: left;">Edit Org Chart</a>
+    <a href="about_us_img.php" class="btn btn-primary" style="padding: 10px 20px; font-size: 16px; background-color: #2C6346; color: #fff; border: none; border-radius: 5px; text-decoration: none; float: left; margin-left: 10px;">Upload Org Chart</a>
+</div>
 
         <div class="feedback">
             <h2>Feedback</h2>

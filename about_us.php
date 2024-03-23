@@ -13,6 +13,7 @@ if (isset($_GET['logout'])) {
   exit();
 }
 
+
 ?>
 
 <!DOCTYPE html>
@@ -67,14 +68,19 @@ if (isset($_GET['logout'])) {
     <h1 class="title_org">DON MARIANO MARCOS MEMORIAL STATE UNIVERSITY ORGANIZATIONAL STRUCTURE</h1>
 </div>
 
-<button onclick="toggleImage()" id="toggleButton">SAS</button>
+<?php
+        // Include PHP file
+        include 'about_us_display.php';
+        ?>
+
+<!--<button onclick="toggleImage()" id="toggleButton">SAS</button>
 
 <div class="org_1">
     <div class="image-container">
         <img src="images/org_1.png" alt="DMMMSU Organization" id="orgImage" onclick="openLightbox()" />
     </div>
     <img src="images/org_2.jpg" alt="Another Image" id="anotherImage" class="hidden" onclick="openLightbox()" />
-</div>
+</div>-->
 
 
 
